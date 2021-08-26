@@ -6,7 +6,7 @@ EESchema-LIBRARY Version 2.4
 DEF Connectors_PinStrip_01x06_Male J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
 F1 "Connectors_PinStrip_01x06_Male" 0 -400 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "Connectors:PinStrip_1x06_P2.54mm_Vertical" 0 0 50 H V C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "PinStrip_01x06_Male" 0 0 50 H V C CNN "Comment"
 F5 "T&T CONNECTION" 0 0 50 H I C CNN "Manufacturer"

@@ -524,9 +524,9 @@
     )
   )
 
-  (gr_line (start 168.91 68.58) (end 80.01 68.58) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 168.91 68.58) (end 104.14 68.58) (layer Dwgs.User) (width 0.15))
   (gr_line (start 168.91 92.71) (end 168.91 68.58) (layer Dwgs.User) (width 0.15))
-  (gr_line (start 80.01 92.71) (end 168.91 92.71) (layer Dwgs.User) (width 0.15))
-  (gr_line (start 80.01 68.58) (end 80.01 92.71) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 104.14 92.71) (end 168.91 92.71) (layer Dwgs.User) (width 0.15))
+  (gr_line (start 104.14 68.58) (end 104.14 92.71) (layer Dwgs.User) (width 0.15))
 
 )

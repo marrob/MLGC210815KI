@@ -1,4 +1,4 @@
-19220956469955790
+19220956815272310
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -46949,7 +46949,7 @@ connector Wuerth WR-WTB vertical
 10
 10
 Connectors
-PinHeader_1x06_P2.54mm_Vertical
+PinStrip_1x06_P2.54mm_Vertical
 Through hole straight pin header, 1x06, 2.54mm pitch, single row
 Through hole pin header THT 1x06 2.54mm single row
 0
