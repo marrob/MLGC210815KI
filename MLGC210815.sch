@@ -1,0 +1,137 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Processors:PIC32MM0064GPL028-I_SO U?
+U 1 1 6127C052
+P 3400 1650
+F 0 "U?" H 3400 2425 50  0000 C CNN
+F 1 "PIC32MM0064GPL028-I_SO" H 3500 2300 50  0001 C CNN
+F 2 "Integrated Circuits:SOIC-28W" H 3400 800 50  0001 C CNN
+F 3 "..\\KiCad\\Datasheet\\MICROCHIP-PIC32MM0064GPL036.pdf" H 3000 2250 50  0001 C CNN
+F 4 "MICROCHIP" H 3400 1650 50  0001 C CNN "Manufacturer"
+F 5 "PIC32MM0064GPL028-I/SO" H 3400 1650 50  0001 C CNN "ManufacturerPartNo"
+F 6 "FAR-2610365; TME-PIC32MM0064GPL028-I/SO" H 3400 1650 50  0001 C CNN "Supplier"
+F 7 "PIC32MM0064GPL028" H 3400 2334 50  0000 C CNN "Comment"
+	1    3400 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connectors:PinStrip_01x06_Male J?
+U 1 1 6127D355
+P 750 3000
+F 0 "J?" H 642 2475 50  0000 C CNN
+F 1 "PinStrip_01x06_Male" H 750 2600 50  0001 C CNN
+F 2 "" H 750 3000 50  0001 C CNN
+F 3 "~" H 750 3000 50  0001 C CNN
+F 4 "PinStrip_01x06_Male" H 642 2566 50  0000 C CNN "Comment"
+F 5 "T&T CONNECTION" H 750 3000 50  0001 C CNN "Manufacturer"
+F 6 "PHSS-40-6/3" H 750 3000 50  0001 C CNN "ManufacturerPartNo"
+F 7 "LOM-43-00-73" H 750 3000 50  0001 C CNN "Supplier"
+	1    750  3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Passive:R0805_220R R?
+U 1 1 61282922
+P 1250 2900
+F 0 "R?" V 1135 2900 50  0000 C CNN
+F 1 "R0805_220R" H 1250 2900 50  0001 C CNN
+F 2 "Passive:R0805" H 1250 2900 50  0001 C CNN
+F 3 "" H 1250 2900 50  0001 C CNN
+F 4 "220R" V 1134 2900 50  0001 C CNN "Comment"
+F 5 "Viking Tech Corp." H 1250 2900 50  0001 C CNN "Manufacturer"
+F 6 "CR-05FL7--220R 0.125W " H 1250 2900 50  0001 C CNN "ManufacturerPartNo"
+F 7 "LOM-80-10-78;" H 1250 2900 50  0001 C CNN "Supplier"
+	1    1250 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Passive:R0805_220R R?
+U 1 1 61283D40
+P 1250 2800
+F 0 "R?" V 1043 2800 50  0000 C CNN
+F 1 "R0805_220R" H 1250 2800 50  0001 C CNN
+F 2 "Passive:R0805" H 1250 2800 50  0001 C CNN
+F 3 "" H 1250 2800 50  0001 C CNN
+F 4 "220R" V 1134 2800 50  0000 C CNN "Comment"
+F 5 "Viking Tech Corp." H 1250 2800 50  0001 C CNN "Manufacturer"
+F 6 "CR-05FL7--220R 0.125W " H 1250 2800 50  0001 C CNN "ManufacturerPartNo"
+F 7 "LOM-80-10-78;" H 1250 2800 50  0001 C CNN "Supplier"
+	1    1250 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Passive:R0805_220R R?
+U 1 1 61285E48
+P 1250 3200
+F 0 "R?" V 1135 3200 50  0000 C CNN
+F 1 "R0805_220R" H 1250 3200 50  0001 C CNN
+F 2 "Passive:R0805" H 1250 3200 50  0001 C CNN
+F 3 "" H 1250 3200 50  0001 C CNN
+F 4 "220R" V 1134 3200 50  0001 C CNN "Comment"
+F 5 "Viking Tech Corp." H 1250 3200 50  0001 C CNN "Manufacturer"
+F 6 "CR-05FL7--220R 0.125W " H 1250 3200 50  0001 C CNN "ManufacturerPartNo"
+F 7 "LOM-80-10-78;" H 1250 3200 50  0001 C CNN "Supplier"
+	1    1250 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	950  3200 1100 3200
+Wire Wire Line
+	950  2900 1100 2900
+Wire Wire Line
+	950  2800 1100 2800
+$Comp
+L power:GND #PWR?
+U 1 1 6128743A
+P 950 3100
+F 0 "#PWR?" H 950 2850 50  0001 C CNN
+F 1 "GND" V 955 2972 50  0000 R CNN
+F 2 "" H 950 3100 50  0001 C CNN
+F 3 "" H 950 3100 50  0001 C CNN
+	1    950  3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 612887AD
+P 950 3000
+F 0 "#PWR?" H 950 2850 50  0001 C CNN
+F 1 "VCC" V 965 3128 50  0000 L CNN
+F 2 "" H 950 3000 50  0001 C CNN
+F 3 "" H 950 3000 50  0001 C CNN
+	1    950  3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1800 3200 1400 3200
+Text Label 1400 2800 0    50   ~ 0
+PGC-RB6
+Text Label 1400 2900 0    50   ~ 0
+PGD-RB7
+Text Label 1400 3200 0    50   ~ 0
+#MCLR
+Wire Wire Line
+	3850 2400 3850 2800
+Wire Wire Line
+	1400 2800 3850 2800
+Wire Wire Line
+	3950 2900 3950 2300
+Wire Wire Line
+	1400 2900 3950 2900
+Wire Wire Line
+	3850 2300 3950 2300
+$EndSCHEMATC
