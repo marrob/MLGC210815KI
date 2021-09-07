@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name MLGC210815-rescue)(type Legacy)(uri ${KIPRJMOD}/MLGC210815-rescue.lib)(options "")(descr "")(disabled))
+)
