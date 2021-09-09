@@ -1,4 +1,4 @@
-835914108390556
+835915468830394
 Connector_FFC-FPC
 Hirose_FH12-6S-0.5SH_1x06-1MP_P0.50mm_Horizontal
 Hirose FH12, FFC/FPC connector, FH12-6S-0.5SH, 6 Pins per row (https://www.hirose.com/product/en/products/FH12/FH12-24S-0.5SH(55)/), generated with kicad-footprint-generator
@@ -2513,14 +2513,14 @@ SSOP 0.65
 28
 28
 Others
-Battery_L402036
+CELLEVIA_L402036
 
 
 0
-0
-0
+2
+2
 Others
-Display_RAYSTAR_REX012832
+RAYSTAR_REX012832
 
 
 0
