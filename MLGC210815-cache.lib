@@ -68,12 +68,60 @@ X VBAT- 2 -450 -100 100 R 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# MLGC210815-rescue_DIODE-BAT54S-Others
+# MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others
 #
-DEF MLGC210815-rescue_DIODE-BAT54S-Others D 0 40 Y Y 1 F N
+DEF MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others" 0 125 50 H I L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "MCP1700T-3302E/TT" 0 0 50 H V C CNN "Comment"
+F5 "MICROCHIP" 0 0 50 H I C CNN "Manufacturer"
+F6 "MCP1700T-3302E/TT" 0 0 50 H I C CNN "ManufacturerPartNo"
+F7 "TME-MCP1700T3302ETT; FAR-1296592;" 0 0 50 H I C CNN "Supplier"
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# Others_BATTERY_MCP73833-FCI_UN
+#
+DEF Others_BATTERY_MCP73833-FCI_UN U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Others_BATTERY_MCP73833-FCI_UN" 75 -325 50 H I C CNN
+F2 "Semiconductor:MSOP-10" 0 -700 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "MCP73833-FCI/UN" 25 -475 50 H V C CNN "Comment"
+F5 "MICROCHIP" 0 -625 50 H I C CNN "Manufacturer"
+F6 "MCP73833-FCI/UN" 25 -550 50 H I C CNN "ManufacturerPartNo"
+F7 "CHP-MCP73833-FCI/UN" 75 -400 50 H I C CNN "Supplier"
+DRAW
+S -250 250 250 -250 0 1 10 f
+X VDD 1 -350 200 100 R 50 50 1 1 W
+X VBAT 10 350 200 100 L 50 50 1 1 w
+X VDD 2 -350 100 100 R 50 50 1 1 W
+X STA1 3 -350 0 100 R 50 50 1 1 O
+X STA2 4 -350 -100 100 R 50 50 1 1 O
+X VSS 5 -350 -200 100 R 50 50 1 1 W
+X PRG 6 350 -200 100 L 50 50 1 1 P
+X #PG 7 350 -100 100 L 50 50 1 1 P
+X TEMP 8 350 0 100 L 50 50 1 1 P
+X VBAT 9 350 100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Others_DIODE_BAT54S
+#
+DEF Others_DIODE_BAT54S D 0 40 Y Y 1 F N
 F0 "D" 25 -150 50 H V L CNN
-F1 "MLGC210815-rescue_DIODE-BAT54S-Others" -250 -275 50 H I L CNN
-F2 "" 75 125 50 H I L CNN
+F1 "Others_DIODE_BAT54S" -250 -275 50 H I L CNN
+F2 "Semiconductor:SOT-23" 75 125 50 H I L CNN
 F3 "" -120 0 50 H I C CNN
 F4 "BAT54S" 0 -350 50 H V C CNN "Comment"
 F5 "VISHAY;" 0 -425 50 H I C CNN "Manufacturer"
@@ -102,132 +150,6 @@ P 4 0 1 0 75 50 75 -50 150 0 75 50 N
 X ~ 1 -300 0 150 R 50 50 1 1 P
 X ~ 2 300 0 150 L 50 50 1 1 P
 X ~ 3 0 -200 200 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others
-#
-DEF MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others" 0 125 50 H I L CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "MCP1700T-3302E/TT" 0 0 50 H V C CNN "Comment"
-F5 "MICROCHIP" 0 0 50 H I C CNN "Manufacturer"
-F6 "MCP1700T-3302E/TT" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "TME-MCP1700T3302ETT; FAR-1296592;" 0 0 50 H I C CNN "Supplier"
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# MLGC210815-rescue_LED0805_KP-2012SGC-Passive
-#
-DEF MLGC210815-rescue_LED0805_KP-2012SGC-Passive D 0 40 N N 1 F N
-F0 "D" 0 0 50 H V C CNN
-F1 "MLGC210815-rescue_LED0805_KP-2012SGC-Passive" 0 0 50 H I C CNN
-F2 "Passive:R0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "Green" 0 0 50 H V C CNN "Comment"
-F5 "KINGBRIGHT" 0 0 50 H I C CNN "Manufacturer"
-F6 "KP-2010SGC" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "TME-KP-2012SGC;FAR-2099239;LOM-95-01-09" 0 0 50 H I C CNN "Supplier"
-DRAW
-P 2 1 1 10 -50 -50 -50 50 N
-P 2 1 1 0 -50 0 50 0 N
-P 4 1 1 10 50 -50 50 50 -50 0 50 -50 N
-P 5 1 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
-P 5 1 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# MLGC210815-rescue_P-MOSFET-SI2315BDS-T1-E3-Others
-#
-DEF MLGC210815-rescue_P-MOSFET-SI2315BDS-T1-E3-Others Q 0 0 Y N 1 F N
-F0 "Q" 200 100 50 H V L CNN
-F1 "MLGC210815-rescue_P-MOSFET-SI2315BDS-T1-E3-Others" 50 -445 50 H I L CNN
-F2 "" 50 -520 50 H I L CIN
-F3 "" -200 -245 50 H I L CNN
-F4 "SI2315BDS" 400 0 50 H V C CNN "Comment"
-F5 "VISHAY" -200 -245 50 H I C CNN "Manufacturer"
-F6 "SI2315BDS-T1-E3" -200 -245 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-86-02-81;FAR-1470105;LOM-86-03-94; FAR-2283650;TME-SI2315BDS-T1-E3;" -200 -245 50 H I C CNN "Supplier"
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-C 65 0 110 1 1 10 N
-C 100 -70 10 1 1 0 F
-C 100 70 10 1 1 0 F
-P 2 1 1 0 10 0 -100 0 N
-P 2 1 1 10 10 75 10 -75 N
-P 2 1 1 10 30 -50 30 -90 N
-P 2 1 1 10 30 20 30 -20 N
-P 2 1 1 10 30 90 30 50 N
-P 2 1 1 0 100 100 100 70 N
-P 3 1 1 0 100 -100 100 0 30 0 N
-P 4 1 1 0 30 70 130 70 130 -70 30 -70 N
-P 4 1 1 0 90 0 50 15 50 -15 90 0 F
-P 4 1 1 0 110 -20 115 -15 145 -15 150 -10 N
-P 4 1 1 0 130 -15 115 10 145 10 130 -15 N
-X G 1 -200 0 100 R 50 50 1 1 I
-X S 2 100 -200 100 U 50 50 1 1 P
-X D 3 100 200 100 D 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# MLGC210815-rescue_Switch_Tact_OMRON-B3F-3100-Others
-#
-DEF MLGC210815-rescue_Switch_Tact_OMRON-B3F-3100-Others SW 0 40 N N 1 F N
-F0 "SW" -50 -75 50 H V L CNN
-F1 "MLGC210815-rescue_Switch_Tact_OMRON-B3F-3100-Others" -25 -150 50 H I C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
-F4 "B3F-3100" 25 -300 50 H V C CNN "Comment"
-F5 "OMRON OCB" 0 -375 50 H I C CNN "Manufacturer"
-F6 "B3F-3100 " 0 -450 50 H I C CNN "ManufacturerPartNo"
-F7 "TME-B3F-3100, FAR-959704," 0 -525 50 H I C CNN "Supplier"
-DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
-# Others_BATTERY_MCP73833-FCI_UN
-#
-DEF Others_BATTERY_MCP73833-FCI_UN U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "Others_BATTERY_MCP73833-FCI_UN" 75 -325 50 H I C CNN
-F2 "Integrated Circuits:MSOP-10" 0 -700 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "MCP73833-FCI/UN" 25 -475 50 H V C CNN "Comment"
-F5 "MICROCHIP" 0 -625 50 H I C CNN "Manufacturer"
-F6 "MCP73833-FCI/UN" 25 -550 50 H I C CNN "ManufacturerPartNo"
-F7 "CHP-MCP73833-FCI/UN" 75 -400 50 H I C CNN "Supplier"
-DRAW
-S -250 250 250 -250 0 1 10 f
-X VDD 1 -350 200 100 R 50 50 1 1 W
-X VBAT 10 350 200 100 L 50 50 1 1 w
-X VDD 2 -350 100 100 R 50 50 1 1 W
-X STA1 3 -350 0 100 R 50 50 1 1 O
-X STA2 4 -350 -100 100 R 50 50 1 1 O
-X VSS 5 -350 -200 100 R 50 50 1 1 W
-X PRG 6 350 -200 100 L 50 50 1 1 P
-X #PG 7 350 -100 100 L 50 50 1 1 P
-X TEMP 8 350 0 100 L 50 50 1 1 P
-X VBAT 9 350 100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -410,12 +332,33 @@ X GND 9 400 50 100 L 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# Others_Switch-Tact_OMRON-B3F-3100
+#
+DEF Others_Switch-Tact_OMRON-B3F-3100 SW 0 40 N N 1 F N
+F0 "SW" -50 -75 50 H V L CNN
+F1 "Others_Switch-Tact_OMRON-B3F-3100" -25 -150 50 H I C CNN
+F2 "Others:OMRON_B3F-3100" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+F4 "B3F-3100" 25 -300 50 H V C CNN "Comment"
+F5 "OMRON OCB" 0 -375 50 H I C CNN "Manufacturer"
+F6 "B3F-3100 " 0 -450 50 H I C CNN "ManufacturerPartNo"
+F7 "TME-B3F-3100, FAR-959704," 0 -525 50 H I C CNN "Supplier"
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
 # Passive_Capacitator_0603_100nF_X7R
 #
 DEF Passive_Capacitator_0603_100nF_X7R C 0 40 N Y 1 F N
 F0 "C" 0 -200 50 H V C CNN
 F1 "Passive_Capacitator_0603_100nF_X7R" 0 -275 50 H I C CNN
-F2 "Passive:C0603" -25 -350 50 H I C CNN
+F2 "Passive:C_0603" -25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "100nF" 0 -425 50 H V C CNN "Comment"
 F5 "YAGEO" 0 -500 50 H I C CNN "Manufacturer"
@@ -434,7 +377,7 @@ ENDDEF
 DEF Passive_Capacitator_0603_1nF_NP0 C 0 40 N Y 1 F N
 F0 "C" 0 -200 50 H V C CNN
 F1 "Passive_Capacitator_0603_1nF_NP0" 0 -275 50 H I C CNN
-F2 "Passive:C0603" -25 -350 50 H I C CNN
+F2 "Passive:C_0603" -25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "100nF" 0 -425 50 H V C CNN "Comment"
 F5 "YAGEO;" 0 -500 50 H I C CNN "Manufacturer"
@@ -453,7 +396,7 @@ ENDDEF
 DEF Passive_Capacitator_0603_2.2uF_X5R C 0 40 N N 1 F N
 F0 "C" 0 -200 50 H V C CNN
 F1 "Passive_Capacitator_0603_2.2uF_X5R" 25 -275 50 H I C CNN
-F2 "Passive:C0603" 0 -325 50 H I C CNN
+F2 "Passive:C_0603" 0 -325 50 H I C CNN
 F3 "" 0 -400 50 H I C CNN
 F4 "2.2uF" 0 -400 50 H V C CNN "Comment"
 F5 "Walsin;" 25 -475 50 H I C CNN "Manufacturer"
@@ -472,7 +415,7 @@ ENDDEF
 DEF Passive_Capacitator_0603_47nF_X7R C 0 40 N Y 1 F N
 F0 "C" 0 -200 50 H V C CNN
 F1 "Passive_Capacitator_0603_47nF_X7R" 0 -275 50 H I C CNN
-F2 "Passive:C0603" -25 -350 50 H I C CNN
+F2 "Passive:C_0603" -25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "47nF" 0 -425 50 H V C CNN "Comment"
 F5 "Fenghua;" 0 -500 50 H I C CNN "Manufacturer"
@@ -491,7 +434,7 @@ ENDDEF
 DEF Passive_Capacitator_0603_47pF_X7R C 0 40 N Y 1 F N
 F0 "C" 0 0 50 H V C CNN
 F1 "Passive_Capacitator_0603_47pF_X7R" 0 0 50 H I C CNN
-F2 "Passive:C0603" 0 0 50 H I C CNN
+F2 "Passive:C_0603" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "47pF" 0 0 50 H V C CNN "Comment"
 F5 "YAGEO" 0 0 50 H I C CNN "Manufacturer"
@@ -508,14 +451,14 @@ ENDDEF
 # Passive_Capacitator_0805_100nF_X7R
 #
 DEF Passive_Capacitator_0805_100nF_X7R C 0 40 N Y 1 F N
-F0 "C" 0 0 50 H V C CNN
-F1 "Passive_Capacitator_0805_100nF_X7R" 0 0 50 H I C CNN
-F2 "Passive:C0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "100nF" 0 0 50 H V C CNN "Comment"
-F5 "YAGEO" 0 0 50 H I C CNN "Manufacturer"
-F6 "CC0805KRX7R9BB104" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "FAR-3019949;LOM-82-01-25" 0 0 50 H I C CNN "Supplier"
+F0 "C" 0 -725 50 H V C CNN
+F1 "Passive_Capacitator_0805_100nF_X7R" 50 -400 50 H I C CNN
+F2 "Passive:C_0805" 50 -475 50 H I C CNN
+F3 "" 75 0 50 H I C CNN
+F4 "100nF" 0 -900 50 H V C CNN "Comment"
+F5 "YAGEO" 0 -825 50 H I C CNN "Manufacturer"
+F6 "CC0805KRX7R9BB104" 75 -550 50 H I C CNN "ManufacturerPartNo"
+F7 "FAR-3019949;LOM-82-01-25" 25 -625 50 H I C CNN "Supplier"
 DRAW
 P 2 1 1 20 -80 -30 80 -30 N
 P 2 1 1 20 -80 30 80 30 N
@@ -529,7 +472,7 @@ ENDDEF
 DEF Passive_Capacitator_0805_10uF_X5R C 0 40 N N 1 F N
 F0 "C" 0 0 50 H V C CNN
 F1 "Passive_Capacitator_0805_10uF_X5R" 0 0 50 H I C CNN
-F2 "Passive:C0805" 0 0 50 H I C CNN
+F2 "Passive:C_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "10uF" 0 0 50 H V C CNN "Comment"
 F5 "SAMSUNG" 0 0 50 H I C CNN "Manufacturer"
@@ -548,7 +491,7 @@ ENDDEF
 DEF Passive_Capacitator_0805_1uF_X7R C 0 40 N N 1 F N
 F0 "C" 0 -200 50 H V C CNN
 F1 "Passive_Capacitator_0805_1uF_X7R" 50 -250 50 H I C CNN
-F2 "Passive:C0603" 0 -325 50 H I C CNN
+F2 "Passive:C_0603" 0 -325 50 H I C CNN
 F3 "" 0 -200 50 H I C CNN
 F4 "1uF" 0 -400 50 H V C CNN "Comment"
 F5 "YAGEO;" 0 -475 50 H I C CNN "Manufacturer"
@@ -567,7 +510,7 @@ ENDDEF
 DEF Passive_Capacitator_0805_22pF_X7R C 0 40 N Y 1 F N
 F0 "C" 0 0 50 H V C CNN
 F1 "Passive_Capacitator_0805_22pF_X7R" 0 0 50 H I C CNN
-F2 "Passive:C0805" 0 0 50 H I C CNN
+F2 "Passive:C_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "22pF" 0 0 50 H V C CNN "Comment"
 F5 "SAMSUNG" 0 0 50 H I C CNN "Manufacturer"
@@ -609,7 +552,7 @@ ENDDEF
 DEF Passive_Filter_0805_BLM21A102SPT L 0 40 N N 1 F N
 F0 "L" 0 -225 50 H V C CNN
 F1 "Passive_Filter_0805_BLM21A102SPT" 0 -600 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "Passive:L_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "BLM21A" 0 -300 50 H V C CNN "Comment"
 F5 "Murata" -25 -375 50 H I C CNN "Manufacturer"
@@ -636,7 +579,7 @@ ENDDEF
 DEF Passive_Inductor_0805_10uH L 0 40 N N 1 F N
 F0 "L" 0 -225 50 H V C CNN
 F1 "Passive_Inductor_0805_10uH" 0 -600 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
+F2 "Passive:L_0805" 0 -675 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "10uH" 0 -300 50 H V C CNN "Comment"
 F5 "MURATA" -25 -375 50 H I C CNN "Manufacturer"
@@ -663,7 +606,7 @@ ENDDEF
 DEF Passive_LED_0603_Blue D 0 40 N N 1 F N
 F0 "D" 0 -100 50 H V C CNN
 F1 "Passive_LED_0603_Blue" 0 -175 50 H I C CNN
-F2 "Passive:R0603" 0 -250 50 H I C CNN
+F2 "Passive:LED_0603_BLU" 0 -250 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "Blue" 0 -325 50 H V C CNN "Comment"
 F5 "Hongli Tronic;" 0 -400 50 H I C CNN "Manufacturer"
@@ -680,12 +623,34 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Passive_LED_0603_Green
+#
+DEF Passive_LED_0603_Green D 0 40 N N 1 F N
+F0 "D" 0 -100 50 H V C CNN
+F1 "Passive_LED_0603_Green" 0 -175 50 H I C CNN
+F2 "Passive:LED_0603_GRE" 0 -250 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "Green" 0 -325 50 H V C CNN "Comment"
+F5 "Hongli Tronic" 0 -400 50 H I C CNN "Manufacturer"
+F6 "HL-PST-1608U51GC" 0 -475 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-95-03-80;" 25 -550 50 H I C CNN "Supplier"
+DRAW
+P 2 1 1 10 -50 -50 -50 50 N
+P 2 1 1 0 -50 0 50 0 N
+P 4 1 1 10 50 -50 50 50 -50 0 50 -50 N
+P 5 1 1 0 -120 -30 -180 -90 -150 -90 -180 -90 -180 -60 N
+P 5 1 1 0 -70 -30 -130 -90 -100 -90 -130 -90 -130 -60 N
+X K 1 -150 0 100 R 50 50 1 1 P
+X A 2 150 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Passive_NTC_0603_10K
 #
 DEF Passive_NTC_0603_10K TH 0 0 N Y 1 F N
 F0 "TH" 0 -225 50 H V C CNN
 F1 "Passive_NTC_0603_10K" 25 -650 50 H I C CNN
-F2 "" 0 50 50 H I C CNN
+F2 "Passive:R_0603" 0 50 50 H I C CNN
 F3 "" 0 50 50 H I C CNN
 F4 "NTC 10K" 25 -300 50 H V C CNN "Comment"
 F5 "SR PASSIVES;" 25 -400 50 H I C CNN "Manufacturer"
@@ -721,13 +686,13 @@ ENDDEF
 #
 DEF Passive_Polyfuse_1812_1100mA_33V F 0 0 N Y 1 F N
 F0 "F" -75 0 50 V V C CNN
-F1 "Passive_Polyfuse_1812_1100mA_33V" 75 0 50 V I C CNN
-F2 "" 50 -200 50 H I L CNN
+F1 "Passive_Polyfuse_1812_1100mA_33V" -25 -350 50 H I C CNN
+F2 "Passive:F_1812" 50 -200 50 H I L CNN
 F3 "" 0 0 50 H I C CNN
-F4 "1.1A/33V" 0 0 50 H V C CNN "Comment"
-F5 "Littelfuse" 0 0 50 H I C CNN "Manufacturer"
-F6 "1812L110/33MR" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-44-03-25;TME-1812L110/33MR;MOU-576-1812L110/33MR" 0 0 50 H I C CNN "Supplier"
+F4 "1.1A/33V" 25 -675 50 H V C CNN "Comment"
+F5 "Littelfuse" 25 -575 50 H I C CNN "Manufacturer"
+F6 "1812L110/33MR" -25 -425 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-44-03-25;TME-1812L110/33MR;MOU-576-1812L110/33MR" 125 -500 50 H I C CNN "Supplier"
 $FPLIST
  *polyfuse*
  *PTC*
@@ -746,7 +711,7 @@ ENDDEF
 DEF Passive_Resistor_0603_0R00 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_0R00" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "0R00" 0 -425 50 H V C CNN "Comment"
 F5 "Yageo Corp." 0 -500 50 H I C CNN "Manufacturer"
@@ -764,7 +729,7 @@ ENDDEF
 DEF Passive_Resistor_0603_10K0 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_10K0" 50 -275 50 H I C CNN
-F2 "Passive:R0805" 25 -350 50 H I C CNN
+F2 "Passive:R_0805" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "10K0" 0 -425 50 H V C CNN "Comment"
 F5 "ASJ" 0 -500 50 H I C CNN "Manufacturer"
@@ -782,7 +747,7 @@ ENDDEF
 DEF Passive_Resistor_0603_10R0 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_10R0" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "10R0" 0 -425 50 H V C CNN "Comment"
 F5 "CR-03FL7---10R 0.1W" 0 -500 50 H I C CNN "Manufacturer"
@@ -800,7 +765,7 @@ ENDDEF
 DEF Passive_Resistor_0603_11K0 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_11K0" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "11K0" 0 -425 50 H V C CNN "Comment"
 F5 "VISHAY" 0 -500 50 H I C CNN "Manufacturer"
@@ -818,12 +783,12 @@ ENDDEF
 DEF Passive_Resistor_0603_150K R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_150K" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "150K" 0 -425 50 H V C CNN "Comment"
 F5 "Viking Tech Corp." 0 -500 50 H I C CNN "Manufacturer"
 F6 "CR-03FL7--150K 0.1W" 25 -575 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-80-13-95 ;" 75 -650 50 H I C CNN "Supplier"
+F7 "LOM-80-13-95;" 75 -650 50 H I C CNN "Supplier"
 DRAW
 S -40 -100 40 100 1 1 10 N
 X ~ 1 0 150 50 D 50 50 1 1 P
@@ -836,7 +801,7 @@ ENDDEF
 DEF Passive_Resistor_0603_1K00 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_1K00" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "1K00" 0 -425 50 H V C CNN "Comment"
 F5 "VIKING;" 0 -500 50 H I C CNN "Manufacturer"
@@ -854,7 +819,7 @@ ENDDEF
 DEF Passive_Resistor_0603_220R R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_220R" 25 -275 50 H I C CNN
-F2 "Passive:R0603" 0 -350 50 H I C CNN
+F2 "Passive:R_0603" 0 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "220R" 0 -425 50 H V C CNN "Comment"
 F5 "Viking Tech Corp." 25 -500 50 H I C CNN "Manufacturer"
@@ -872,7 +837,7 @@ ENDDEF
 DEF Passive_Resistor_0603_27R0 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_27R0" 50 -250 50 H I C CNN
-F2 "Passive:R0603" 50 -350 50 H I C CNN
+F2 "Passive:R_0603" 50 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "27R0" 25 -450 50 H V C CNN "Comment"
 F5 "Viking Tech Corp." 25 -525 50 H I C CNN "Manufacturer"
@@ -890,7 +855,7 @@ ENDDEF
 DEF Passive_Resistor_0603_39K0 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_39K0" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "39K0" 0 -425 50 H V C CNN "Comment"
 F5 "VISHAY" 0 -500 50 H I C CNN "Manufacturer"
@@ -908,7 +873,7 @@ ENDDEF
 DEF Passive_Resistor_0603_470R R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_470R" 50 -275 50 H I C CNN
-F2 "Passive:R0805" 25 -350 50 H I C CNN
+F2 "Passive:R_0805" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "470R" 0 -425 50 H V C CNN "Comment"
 F5 "VIKING" 0 -500 50 H I C CNN "Manufacturer"
@@ -926,7 +891,7 @@ ENDDEF
 DEF Passive_Resistor_0603_4K70 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_4K70" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "4K70" 0 -425 50 H V C CNN "Comment"
 F5 "ROYAL OHM;" 0 -500 50 H I C CNN "Manufacturer"
@@ -944,7 +909,7 @@ ENDDEF
 DEF Passive_Resistor_0603_9K10 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_9K10" 50 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "9K10" 0 -425 50 H V C CNN "Comment"
 F5 "VISHAY" 0 -500 50 H I C CNN "Manufacturer"
@@ -962,7 +927,7 @@ ENDDEF
 DEF Passive_Resistor_0603_R_DNP R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_R_DNP" 25 -275 50 H I C CNN
-F2 "Passive:R0603" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "DNP" 25 -425 50 H V C CNN "Comment"
 DRAW
@@ -977,7 +942,7 @@ ENDDEF
 DEF Passive_Resistor_0805_0R00 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0805_0R00" 0 -275 50 H I C CNN
-F2 "Passive:R0805" -25 -350 50 H I C CNN
+F2 "Passive:R_0805" -25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "0R00" 0 -425 50 H V C CNN "Comment"
 F5 "VIKING" 0 -500 50 H I C CNN "Manufacturer"
@@ -995,7 +960,7 @@ ENDDEF
 DEF Passive_Resistor_0805_10K0 R 0 40 N Y 1 F N
 F0 "R" 0 0 50 H V C CNN
 F1 "Passive_Resistor_0805_10K0" 0 0 50 H I C CNN
-F2 "Passive:R0805" 0 0 50 H I C CNN
+F2 "Passive:R_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "10K0" 0 0 50 H V C CNN "Comment"
 F5 "Walsin" 0 0 50 H I C CNN "Manufacturer"
@@ -1013,7 +978,7 @@ ENDDEF
 DEF Passive_Resistor_0805_220R R 0 40 N Y 1 F N
 F0 "R" 0 0 50 H V C CNN
 F1 "Passive_Resistor_0805_220R" 0 0 50 H I C CNN
-F2 "Passive:R0805" 0 0 50 H I C CNN
+F2 "Passive:R_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "220R" 0 0 50 H V C CNN "Comment"
 F5 "Viking Tech Corp." 0 0 50 H I C CNN "Manufacturer"
@@ -1031,7 +996,7 @@ ENDDEF
 DEF Passive_Resistor_0805_470R R 0 40 N Y 1 F N
 F0 "R" 0 0 50 H V C CNN
 F1 "Passive_Resistor_0805_470R" 0 0 50 H I C CNN
-F2 "Passive:R0805" 0 0 50 H I C CNN
+F2 "Passive:R_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "470R" 0 0 50 H V C CNN "Comment"
 F5 "Walsin" 0 0 50 H I C CNN "Manufacturer"
@@ -1049,7 +1014,7 @@ ENDDEF
 DEF Passive_Resistor_0805_4K70 R 0 40 N N 1 F N
 F0 "R" 0 0 50 H V C CNN
 F1 "Passive_Resistor_0805_4K70" 0 0 50 H I C CNN
-F2 "Passive:R0805" 0 0 50 H I C CNN
+F2 "Passive:R_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "4K70" 0 0 50 H V C CNN "Comment"
 F5 "VIKING" 0 0 50 H I C CNN "Manufacturer"
@@ -1067,7 +1032,7 @@ ENDDEF
 DEF Passive_Resistor_0805_R_DNP R 0 40 N Y 1 F N
 F0 "R" 0 0 50 H V C CNN
 F1 "Passive_Resistor_0805_R_DNP" 0 0 50 H I C CNN
-F2 "Passive:R0805" 0 0 50 H I C CNN
+F2 "Passive:R_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "DNP" 0 0 50 H V C CNN "Comment"
 DRAW
