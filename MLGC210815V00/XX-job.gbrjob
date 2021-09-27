@@ -7,15 +7,15 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.10)-1"
     },
-    "CreationDate":  "2021-09-27T23:11:59+02:00"
+    "CreationDate":  "2021-09-27T23:39:52+02:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "MLGC210815",
-      "GUID": "4d4c4743-3231-4303-9831-352e6b696361",
-      "Revision": "rev?"
+      "Name": "XX",
+      "GUID": "58582e6b-6963-4616-945f-706362585858",
+      "Revision": "V00"
     },
     "Size":
     {
@@ -40,37 +40,37 @@
   "FilesAttributes":
   [
     {
-      "Path":  "MLGC210815-F_Cu.gtl",
+      "Path":  "XX-F_Cu.gtl",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "MLGC210815-B_Cu.gbl",
+      "Path":  "XX-B_Cu.gbl",
       "FileFunction":  "Copper,L2,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "MLGC210815-F_SilkS.gto",
+      "Path":  "XX-F_SilkS.gto",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "MLGC210815-B_SilkS.gbo",
+      "Path":  "XX-B_SilkS.gbo",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "MLGC210815-F_Mask.gts",
+      "Path":  "XX-F_Mask.gts",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "MLGC210815-B_Mask.gbs",
+      "Path":  "XX-B_Mask.gbs",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "MLGC210815-Edge_Cuts.gm1",
+      "Path":  "XX-Edge_Cuts.gm1",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
