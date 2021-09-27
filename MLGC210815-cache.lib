@@ -1,17 +1,58 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connectors_PinStrip_01x06_Male
+# Connectors_PinHeader_01x01_Male
 #
-DEF Connectors_PinStrip_01x06_Male J 0 40 Y N 1 F N
+DEF Connectors_PinHeader_01x01_Male J 0 40 Y N 1 F N
+F0 "J" 10 70 50 H V C CNN
+F1 "Connectors_PinHeader_01x01_Male" 60 -260 50 H I C CNN
+F2 "Connectors:PinHeader_1x01_P2.54mm_Horizontal" 35 -190 50 H I C CNN
+F3 "" 100 40 50 H I C CNN
+F4 "PinHeader_01x01_Male" 10 -335 50 H I C CNN "Comment"
+F5 "T&T CONNECTION" -15 -435 50 H I C CNN "Manufacturer"
+F6 "PHSS-40-6/3" -15 -510 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-43-00-73" 10 -110 50 H I C CNN "Supplier"
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 0 30 150 -30 0 1 10 f
+X Pin_1 1 -100 0 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connectors_PinHeader_01x02_Male
+#
+DEF Connectors_PinHeader_01x02_Male J 0 40 Y N 1 F N
+F0 "J" 10 120 50 H V C CNN
+F1 "Connectors_PinHeader_01x02_Male" 50 -300 50 H I C CNN
+F2 "Connectors:PinHeader_1x02_P2.54mm_Vertical" 25 -230 50 H I C CNN
+F3 "" 90 -150 50 H I C CNN
+F4 "PinHeader_01x02_Male" 0 -375 50 H I C CNN "Comment"
+F5 "T&T CONNECTION" -25 -475 50 H I C CNN "Manufacturer"
+F6 "PHSS-40-6/3" -25 -550 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-43-00-73" 0 -150 50 H I C CNN "Supplier"
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S 0 80 150 -80 0 1 10 f
+X Pin_1 1 -100 50 100 R 50 50 1 1 P
+X Pin_2 2 -100 -50 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connectors_PinHeader_01x06_Male
+#
+DEF Connectors_PinHeader_01x06_Male J 0 40 Y N 1 F N
 F0 "J" 10 320 50 H V C CNN
-F1 "Connectors_PinStrip_01x06_Male" 90 -350 50 H I C CNN
-F2 "Connectors:PinStrip_1x06_P2.54mm_Vertical" 50 -480 50 H V C CNN
+F1 "Connectors_PinHeader_01x06_Male" 50 -500 50 H I C CNN
+F2 "Connectors:PinHeader_1x06_P2.54mm_Vertical" 25 -430 50 H I C CNN
 F3 "" 90 50 50 H I C CNN
-F4 "PinStrip_01x06_Male" 120 -380 50 H V C CNN "Comment"
-F5 "T&T CONNECTION" 70 -360 50 H I C CNN "Manufacturer"
-F6 "PHSS-40-6/3" -60 410 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-43-00-73" 90 -370 50 H I C CNN "Supplier"
+F4 "PinHeader_01x06_Male" 0 -575 50 H I C CNN "Comment"
+F5 "T&T CONNECTION" -25 -675 50 H I C CNN "Manufacturer"
+F6 "PHSS-40-6/3" -25 -750 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-43-00-73" 0 -350 50 H I C CNN "Supplier"
 $FPLIST
  Connector*:*_1x??_*
 $ENDFPLIST
@@ -50,11 +91,11 @@ X Shield 5 -250 -200 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MLGC210815-rescue_BATTERY_CELLEVIA-L402036-Others
+# Others_BATTERY_L402036
 #
-DEF MLGC210815-rescue_BATTERY_CELLEVIA-L402036-Others B 0 40 Y Y 1 F N
+DEF Others_BATTERY_L402036 B 0 40 Y Y 1 F N
 F0 "B" -325 -175 50 H V C CNN
-F1 "MLGC210815-rescue_BATTERY_CELLEVIA-L402036-Others" 25 -425 50 H I C CNN
+F1 "Others_BATTERY_L402036" 25 -425 50 H I C CNN
 F2 "Others:CELLEVIA_L402036" 25 -650 50 H I C CNN
 F3 "" 175 0 50 H I C CNN
 F4 "Battery 3.7V/220mAh" 25 -325 50 H V C CNN "Comment"
@@ -63,30 +104,6 @@ F6 "L402036" 0 -575 50 H I C CNN "ManufacturerPartNo"
 F7 "TME-ACCU-LP402036/CL;" 50 -500 50 H I C CNN "Supplier"
 DRAW
 S -346 160 329 -140 0 1 10 f
-X VBAT+ 1 -450 100 100 R 50 50 1 1 w
-X VBAT- 2 -450 -100 100 R 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others
-#
-DEF MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others U 0 10 Y Y 1 F N
-F0 "U" -150 125 50 H V C CNN
-F1 "MLGC210815-rescue_LDO-MCP1700T-3302E_TT-Others" 0 125 50 H I L CNN
-F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "MCP1700T-3302E/TT" 0 0 50 H V C CNN "Comment"
-F5 "MICROCHIP" 0 0 50 H I C CNN "Manufacturer"
-F6 "MCP1700T-3302E/TT" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "TME-MCP1700T3302ETT; FAR-1296592;" 0 0 50 H I C CNN "Supplier"
-$FPLIST
- SOT?23*
-$ENDFPLIST
-DRAW
-S -200 75 200 -200 0 1 10 f
-X GND 1 0 -300 100 U 50 50 1 1 W
-X VO 2 300 0 100 L 50 50 1 1 w
-X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -110,7 +127,7 @@ X STA1 3 -350 0 100 R 50 50 1 1 O
 X STA2 4 -350 -100 100 R 50 50 1 1 O
 X VSS 5 -350 -200 100 R 50 50 1 1 W
 X PRG 6 350 -200 100 L 50 50 1 1 P
-X #PG 7 350 -100 100 L 50 50 1 1 P
+X PG# 7 350 -100 100 L 50 50 1 1 P
 X TEMP 8 350 0 100 L 50 50 1 1 P
 X VBAT 9 350 100 100 L 50 50 1 1 P
 ENDDRAW
@@ -216,6 +233,28 @@ X ~CTS 6 -450 -150 150 R 50 50 1 1 I
 X CBUS2 7 -450 -250 150 R 50 50 1 1 B
 X USBDP 8 -450 -350 150 R 50 50 1 1 B
 X USBDM 9 450 -350 150 L 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Others_LDO_MCP1700T-3302E_TT
+#
+DEF Others_LDO_MCP1700T-3302E_TT U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "Others_LDO_MCP1700T-3302E_TT" -425 -575 50 H I L CNN
+F2 "Semiconductor:SOT-23" 0 -650 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "MCP1700T-3302E/TT" 0 -350 50 H V C CNN "Comment"
+F5 "MICROCHIP" -25 -750 50 H I C CNN "Manufacturer"
+F6 "MCP1700T-3302E/TT" 0 -425 50 H I C CNN "ManufacturerPartNo"
+F7 "TME-MCP1700T3302ETT; FAR-1296592;" 25 -500 50 H I C CNN "Supplier"
+$FPLIST
+ SOT?23*
+$ENDFPLIST
+DRAW
+S -200 75 200 -200 0 1 10 f
+X GND 1 0 -300 100 U 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X VI 3 -300 0 100 R 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
@@ -372,6 +411,25 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Passive_Capacitator_0603_10uF_X5R
+#
+DEF Passive_Capacitator_0603_10uF_X5R C 0 40 N N 1 F N
+F0 "C" 0 -825 50 H V C CNN
+F1 "Passive_Capacitator_0603_10uF_X5R" 0 -425 50 H I C CNN
+F2 "Passive:C_0603" 0 -500 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "10uF" 150 -325 50 H V C CNN "Comment"
+F5 "Murata" 25 -725 50 H I C CNN "Manufacturer"
+F6 "GRM188R61A106KE69D" -25 -575 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-82-13-69;" -25 -650 50 H I C CNN "Supplier"
+DRAW
+P 2 1 1 20 -80 -30 80 -30 N
+P 2 1 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Passive_Capacitator_0603_1nF_NP0
 #
 DEF Passive_Capacitator_0603_1nF_NP0 C 0 40 N Y 1 F N
@@ -379,10 +437,29 @@ F0 "C" 0 -200 50 H V C CNN
 F1 "Passive_Capacitator_0603_1nF_NP0" 0 -275 50 H I C CNN
 F2 "Passive:C_0603" -25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "100nF" 0 -425 50 H V C CNN "Comment"
+F4 "10nF" 0 -425 50 H V C CNN "Comment"
 F5 "YAGEO;" 0 -500 50 H I C CNN "Manufacturer"
 F6 "CC0603JRNP09BN102;" 0 -575 50 H I C CNN "ManufacturerPartNo"
 F7 "LOM-82-06-33;LOM-82-09-55;" -50 -675 50 H I C CNN "Supplier"
+DRAW
+P 2 1 1 20 -80 -30 80 -30 N
+P 2 1 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Passive_Capacitator_0603_1uF_X7R
+#
+DEF Passive_Capacitator_0603_1uF_X7R C 0 40 N N 1 F N
+F0 "C" 0 -825 50 H V C CNN
+F1 "Passive_Capacitator_0603_1uF_X7R" 0 -425 50 H I C CNN
+F2 "Passive:C_0603" 0 -500 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "1uF" 150 -325 50 H V C CNN "Comment"
+F5 "YAGEO;" 25 -725 50 H I C CNN "Manufacturer"
+F6 "CC0603KRX7R7BB105;" -25 -575 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-82-06-80;TME-CC0603KRX7R7105;" -25 -650 50 H I C CNN "Supplier"
 DRAW
 P 2 1 1 20 -80 -30 80 -30 N
 P 2 1 1 20 -80 30 80 30 N
@@ -402,6 +479,25 @@ F4 "2.2uF" 0 -400 50 H V C CNN "Comment"
 F5 "Walsin;" 25 -475 50 H I C CNN "Manufacturer"
 F6 "X225K6R3CT;" 50 -550 50 H I C CNN "ManufacturerPartNo"
 F7 "LOM-82-00-19;" 50 -625 50 H I C CNN "Supplier"
+DRAW
+P 2 1 1 20 -80 -30 80 -30 N
+P 2 1 1 20 -80 30 80 30 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Passive_Capacitator_0603_22pF_NP0
+#
+DEF Passive_Capacitator_0603_22pF_NP0 C 0 40 N Y 1 F N
+F0 "C" 75 -300 50 H V C CNN
+F1 "Passive_Capacitator_0603_22pF_NP0" 25 -400 50 H I C CNN
+F2 "Passive:C_0603" 25 -475 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "22pF" 0 -875 50 H V C CNN "Comment"
+F5 "YAGEO" 0 -800 50 H I C CNN "Manufacturer"
+F6 "CC0603JRNP09BN220;" 0 -550 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-82-02-18;" 25 -675 50 H I C CNN "Supplier"
 DRAW
 P 2 1 1 20 -80 -30 80 -30 N
 P 2 1 1 20 -80 30 80 30 N
@@ -432,14 +528,14 @@ ENDDEF
 # Passive_Capacitator_0603_47pF_X7R
 #
 DEF Passive_Capacitator_0603_47pF_X7R C 0 40 N Y 1 F N
-F0 "C" 0 0 50 H V C CNN
-F1 "Passive_Capacitator_0603_47pF_X7R" 0 0 50 H I C CNN
-F2 "Passive:C_0603" 0 0 50 H I C CNN
+F0 "C" 75 -300 50 H V C CNN
+F1 "Passive_Capacitator_0603_47pF_X7R" 25 -400 50 H I C CNN
+F2 "Passive:C_0603" 25 -475 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "47pF" 0 0 50 H V C CNN "Comment"
-F5 "YAGEO" 0 0 50 H I C CNN "Manufacturer"
-F6 "CC0603JRNP09BN470" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-82-02-22" 0 0 50 H I C CNN "Supplier"
+F4 "47pF" 0 -875 50 H V C CNN "Comment"
+F5 "YAGEO" 0 -800 50 H I C CNN "Manufacturer"
+F6 "CC0603JRNP09BN470" 0 -550 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-82-02-22" 25 -675 50 H I C CNN "Supplier"
 DRAW
 P 2 1 1 20 -80 -30 80 -30 N
 P 2 1 1 20 -80 30 80 30 N
@@ -448,102 +544,56 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Passive_Capacitator_0805_100nF_X7R
+# Passive_Crystal_SMD3225_12MHz
 #
-DEF Passive_Capacitator_0805_100nF_X7R C 0 40 N Y 1 F N
-F0 "C" 0 -725 50 H V C CNN
-F1 "Passive_Capacitator_0805_100nF_X7R" 50 -400 50 H I C CNN
-F2 "Passive:C_0805" 50 -475 50 H I C CNN
-F3 "" 75 0 50 H I C CNN
-F4 "100nF" 0 -900 50 H V C CNN "Comment"
-F5 "YAGEO" 0 -825 50 H I C CNN "Manufacturer"
-F6 "CC0805KRX7R9BB104" 75 -550 50 H I C CNN "ManufacturerPartNo"
-F7 "FAR-3019949;LOM-82-01-25" 25 -625 50 H I C CNN "Supplier"
-DRAW
-P 2 1 1 20 -80 -30 80 -30 N
-P 2 1 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Capacitator_0805_10uF_X5R
-#
-DEF Passive_Capacitator_0805_10uF_X5R C 0 40 N N 1 F N
-F0 "C" 0 0 50 H V C CNN
-F1 "Passive_Capacitator_0805_10uF_X5R" 0 0 50 H I C CNN
-F2 "Passive:C_0805" 0 0 50 H I C CNN
+DEF Passive_Crystal_SMD3225_12MHz Y 0 40 Y N 1 F N
+F0 "Y" 60 -300 50 H V C CNN
+F1 "Passive_Crystal_SMD3225_12MHz" 20 -440 50 H I C CNN
+F2 "Passive:Crystal_SMD_3225" 40 -730 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "10uF" 0 0 50 H V C CNN "Comment"
-F5 "SAMSUNG" 0 0 50 H I C CNN "Manufacturer"
-F6 "CL21A106KOQNNNG" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-82-08-32;TME-0805YD106KAT2A;TME-CL21A106KOQNNNG; FAR-1288204;" 0 0 50 H I C CNN "Supplier"
-DRAW
-P 2 1 1 20 -80 -30 80 -30 N
-P 2 1 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Capacitator_0805_1uF_X7R
-#
-DEF Passive_Capacitator_0805_1uF_X7R C 0 40 N N 1 F N
-F0 "C" 0 -200 50 H V C CNN
-F1 "Passive_Capacitator_0805_1uF_X7R" 50 -250 50 H I C CNN
-F2 "Passive:C_0603" 0 -325 50 H I C CNN
-F3 "" 0 -200 50 H I C CNN
-F4 "1uF" 0 -400 50 H V C CNN "Comment"
-F5 "YAGEO;" 0 -475 50 H I C CNN "Manufacturer"
-F6 "CC0603KRX7R7BB105" 0 -550 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-82-06-80;TME-CC0603KRX7R7105;" 25 -625 50 H I C CNN "Supplier"
-DRAW
-P 2 1 1 20 -80 -30 80 -30 N
-P 2 1 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Capacitator_0805_22pF_X7R
-#
-DEF Passive_Capacitator_0805_22pF_X7R C 0 40 N Y 1 F N
-F0 "C" 0 0 50 H V C CNN
-F1 "Passive_Capacitator_0805_22pF_X7R" 0 0 50 H I C CNN
-F2 "Passive:C_0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "22pF" 0 0 50 H V C CNN "Comment"
-F5 "SAMSUNG" 0 0 50 H I C CNN "Manufacturer"
-F6 "CL21C220JBANNNC" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-82-09-18;" 0 0 50 H I C CNN "Supplier"
-DRAW
-P 2 1 1 20 -80 -30 80 -30 N
-P 2 1 1 20 -80 30 80 30 N
-X ~ 1 0 150 110 D 50 50 1 1 P
-X ~ 2 0 -150 110 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Crystal_HC49SM_8MHz
-#
-DEF Passive_Crystal_HC49SM_8MHz Y 0 40 N N 1 F N
-F0 "Y" 0 100 50 H V C CNN
-F1 "Passive_Crystal_HC49SM_8MHz" 0 -100 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "8MHz" 0 0 50 H V C CNN "Comment"
-F5 "IQD FREQUENCY PRODUCTS" 0 0 50 H I C CNN "Manufacturer"
-F6 "8.00M-SMDHC49R" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-40-01-23;FAR-1842346;RS-703-7103;TME-8.00M-SMDHC49R;RET-62-01-82" 0 0 50 H I C CNN "Supplier"
+F4 "12MHz" 20 -370 50 H V C CNN "Comment"
+F5 "NSK" 10 -510 50 H I C CNN "Manufacturer"
+F6 "SMD/NXK-32 12MHz" 30 -580 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-40-02-17;" 0 -660 50 H I C CNN "Supplier"
 $FPLIST
  Crystal*
 $ENDFPLIST
 DRAW
-S -30 -60 30 60 0 1 0 N
+S -20 -50 20 50 0 1 0 N
 P 2 0 1 15 -50 -30 -50 30 N
 P 2 0 1 15 50 -30 50 30 N
-X 1 1 -100 0 50 R 50 50 1 1 P
-X 2 2 100 0 50 L 50 50 1 1 P
+P 4 0 1 0 -50 -50 -50 -75 50 -75 50 -50 N
+X 1 1 -100 0 50 R 30 50 1 1 P
+X 2 2 -25 -100 25 U 0 0 1 1 P
+X 3 3 100 0 50 L 30 50 1 1 P
+X 4 4 25 -100 25 U 0 0 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Passive_Filter_0603_CB03YTYH101
+#
+DEF Passive_Filter_0603_CB03YTYH101 L 0 40 N N 1 F N
+F0 "L" 0 -225 50 H V C CNN
+F1 "Passive_Filter_0603_CB03YTYH101" 0 -600 50 H I C CNN
+F2 "Passive:L_0603" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+F4 "100R@100MHz" 0 -300 50 H V C CNN "Comment"
+F5 "Viking Tech Corp." -25 -375 50 H I C CNN "Manufacturer"
+F6 "CB03YTYH101" 0 -450 50 H I C CNN "ManufacturerPartNo"
+F7 "LOM-93-03-73" 0 -525 50 H I C CNN "Supplier"
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -75 25 -899 899 0 1 0 N 0 -100 0 -50
+A 0 -25 25 -899 899 0 1 0 N 0 -50 0 0
+A 0 25 25 -899 899 0 1 0 N 0 0 0 50
+A 0 75 25 -899 899 0 1 0 N 0 50 0 100
+X 1 1 0 150 50 D 50 50 1 1 P
+X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
@@ -554,7 +604,7 @@ F0 "L" 0 -225 50 H V C CNN
 F1 "Passive_Filter_0805_BLM21A102SPT" 0 -600 50 H I C CNN
 F2 "Passive:L_0805" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-F4 "BLM21A" 0 -300 50 H V C CNN "Comment"
+F4 "1K00@100MHz" 0 -300 50 H V C CNN "Comment"
 F5 "Murata" -25 -375 50 H I C CNN "Manufacturer"
 F6 "BLM21A102SPT" 0 -450 50 H I C CNN "ManufacturerPartNo"
 F7 "TME-BLM21A102SPT" 0 -525 50 H I C CNN "Supplier"
@@ -729,7 +779,7 @@ ENDDEF
 DEF Passive_Resistor_0603_10K0 R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_10K0" 50 -275 50 H I C CNN
-F2 "Passive:R_0805" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "10K0" 0 -425 50 H V C CNN "Comment"
 F5 "ASJ" 0 -500 50 H I C CNN "Manufacturer"
@@ -873,7 +923,7 @@ ENDDEF
 DEF Passive_Resistor_0603_470R R 0 40 N Y 1 F N
 F0 "R" 0 -200 50 H V C CNN
 F1 "Passive_Resistor_0603_470R" 50 -275 50 H I C CNN
-F2 "Passive:R_0805" 25 -350 50 H I C CNN
+F2 "Passive:R_0603" 25 -350 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "470R" 0 -425 50 H V C CNN "Comment"
 F5 "VIKING" 0 -500 50 H I C CNN "Manufacturer"
@@ -937,111 +987,6 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Passive_Resistor_0805_0R00
-#
-DEF Passive_Resistor_0805_0R00 R 0 40 N Y 1 F N
-F0 "R" 0 -200 50 H V C CNN
-F1 "Passive_Resistor_0805_0R00" 0 -275 50 H I C CNN
-F2 "Passive:R_0805" -25 -350 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "0R00" 0 -425 50 H V C CNN "Comment"
-F5 "VIKING" 0 -500 50 H I C CNN "Manufacturer"
-F6 "CR-05JL7----0R 0.125W" 25 -575 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-81-10-02;" 0 -650 50 H I C CNN "Supplier"
-DRAW
-S -40 -100 40 100 1 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Resistor_0805_10K0
-#
-DEF Passive_Resistor_0805_10K0 R 0 40 N Y 1 F N
-F0 "R" 0 0 50 H V C CNN
-F1 "Passive_Resistor_0805_10K0" 0 0 50 H I C CNN
-F2 "Passive:R_0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "10K0" 0 0 50 H V C CNN "Comment"
-F5 "Walsin" 0 0 50 H I C CNN "Manufacturer"
-F6 "WR08X471JTL" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-81-30-15;" 0 0 50 H I C CNN "Supplier"
-DRAW
-S -40 -100 40 100 1 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Resistor_0805_220R
-#
-DEF Passive_Resistor_0805_220R R 0 40 N Y 1 F N
-F0 "R" 0 0 50 H V C CNN
-F1 "Passive_Resistor_0805_220R" 0 0 50 H I C CNN
-F2 "Passive:R_0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "220R" 0 0 50 H V C CNN "Comment"
-F5 "Viking Tech Corp." 0 0 50 H I C CNN "Manufacturer"
-F6 "CR-05FL7--220R 0.125W " 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-80-10-78;" 0 0 50 H I C CNN "Supplier"
-DRAW
-S -40 -100 40 100 1 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Resistor_0805_470R
-#
-DEF Passive_Resistor_0805_470R R 0 40 N Y 1 F N
-F0 "R" 0 0 50 H V C CNN
-F1 "Passive_Resistor_0805_470R" 0 0 50 H I C CNN
-F2 "Passive:R_0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "470R" 0 0 50 H V C CNN "Comment"
-F5 "Walsin" 0 0 50 H I C CNN "Manufacturer"
-F6 "WR08X471JTL" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-81-30-15;" 0 0 50 H I C CNN "Supplier"
-DRAW
-S -40 -100 40 100 1 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Resistor_0805_4K70
-#
-DEF Passive_Resistor_0805_4K70 R 0 40 N N 1 F N
-F0 "R" 0 0 50 H V C CNN
-F1 "Passive_Resistor_0805_4K70" 0 0 50 H I C CNN
-F2 "Passive:R_0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "4K70" 0 0 50 H V C CNN "Comment"
-F5 "VIKING" 0 0 50 H I C CNN "Manufacturer"
-F6 "CR-05FL7---4K7 0.125W" 0 0 50 H I C CNN "ManufacturerPartNo"
-F7 "LOM-80-10-94" 0 0 50 H I C CNN "Supplier"
-DRAW
-S -40 -100 40 100 1 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Passive_Resistor_0805_R_DNP
-#
-DEF Passive_Resistor_0805_R_DNP R 0 40 N Y 1 F N
-F0 "R" 0 0 50 H V C CNN
-F1 "Passive_Resistor_0805_R_DNP" 0 0 50 H I C CNN
-F2 "Passive:R_0805" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-F4 "DNP" 0 0 50 H V C CNN "Comment"
-DRAW
-S -40 -100 40 100 1 1 10 N
-X ~ 1 0 150 50 D 50 50 1 1 P
-X ~ 2 0 -150 50 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Processors_PIC32MX170F256B-ISS
 #
 DEF Processors_PIC32MX170F256B-ISS U 0 20 Y Y 1 F N
@@ -1055,7 +1000,7 @@ F6 "PIC32MX170F256B-I/SS" 25 -1075 50 H I C CNN "ManufacturerPartNo"
 F7 "FAR-3636831;TME-PIC32MX170F256B-I/SS;" -25 -1150 50 H I C CNN "Supplier"
 DRAW
 S -350 600 350 -800 0 1 10 f
-X MCLR 1 -450 550 100 R 50 50 1 1 I
+X MCLR# 1 -450 550 100 R 50 50 1 1 I
 X OSC2 10 -450 -350 100 R 50 50 1 1 P
 X RB4 11 -450 -450 100 R 50 50 1 1 B
 X RA4 12 -450 -550 100 R 50 50 1 1 B
