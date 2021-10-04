@@ -2,16 +2,16 @@
 <export version="D">
   <design>
     <source>D:\@@@!ProjectS\Cirucits\MLGC210815KI\MLGC210815.sch</source>
-    <date>8/22/2021 6:32:42 PM</date>
+    <date>10/4/2021 5:23:49 PM</date>
     <tool>Eeschema (5.1.10)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title/>
-        <company/>
-        <rev/>
-        <date/>
+        <title>Smart Logic Probe</title>
+        <company>Konvolúció Bt</company>
+        <rev>V00</rev>
+        <date>2021-08-26</date>
         <source>MLGC210815.sch</source>
-        <comment number="1" value=""/>
+        <comment number="1" value="MLGC210815"/>
         <comment number="2" value=""/>
         <comment number="3" value=""/>
         <comment number="4" value=""/>
@@ -19,32 +19,1518 @@
     </sheet>
   </design>
   <components>
-    <comp ref="U1">
-      <value>PIC32MM0064GPL028-I_SO</value>
-      <footprint>Integrated Circuits:SOIC-28W</footprint>
-      <datasheet>..\KiCad\Datasheet\MICROCHIP-PIC32MM0064GPL036.pdf</datasheet>
-      <libsource lib="Processors" part="PIC32MM0064GPL028-I_SO" description="Controller, PIC32MM, SMT, SO-28-300"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>6123B1C8</tstamp>
-    </comp>
     <comp ref="J1">
-      <value>Conn_01x06_Female</value>
+      <value>PinHeader_01x06_Male</value>
+      <footprint>Connectors:PinHeader_1x06_P2.54mm_Vertical</footprint>
       <datasheet>~</datasheet>
-      <libsource lib="Connectors" part="Conn_01x06_Female" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <fields>
+        <field name="Comment">PinHeader_01x06_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
+      </fields>
+      <libsource lib="Connectors" part="PinHeader_01x06_Male" description="Connector Pin Header, 01x06, 2.54, 180, Male, THT"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>61246023</tstamp>
+      <tstamp>6127D355</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61282922</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61285E48</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612CDFB0</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612D1185</tstamp>
+    </comp>
+    <comp ref="B1">
+      <value>BATTERY_L402036</value>
+      <footprint>Others:CELLEVIA_L402036</footprint>
+      <datasheet>${KNV_DATASHEET}\CELLEVIA LP402036.pdf</datasheet>
+      <fields>
+        <field name="Comment">Battery 3.7V/220mAh</field>
+        <field name="Manufacturer">CELLEVIA BATTERIES</field>
+        <field name="ManufacturerPartNo">L402036</field>
+        <field name="Supplier">TME-ACCU-LP402036/CL;</field>
+      </fields>
+      <libsource lib="Others" part="BATTERY_L402036" description="Battery, LiPo, 3.7V, 220mAh, 4.5x21x38.5mm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E1309</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>PIC32MX170F256B-ISS</value>
+      <footprint>Semiconductor:SSOP-28</footprint>
+      <datasheet>${KNV_DATASHEET}\MICROCHIP PIC32MX230F256B.pdf</datasheet>
+      <fields>
+        <field name="Comment">PIC32MX170F256B</field>
+        <field name="Manufacturer">MICROCHIP</field>
+        <field name="ManufacturerPartNo">PIC32MX170F256B-I/SS</field>
+        <field name="Supplier">FAR-3636831;TME-PIC32MX170F256B-I/SS;</field>
+      </fields>
+      <libsource lib="Processors" part="PIC32MX170F256B-ISS" description="Controller, PIC32MX, SMT, SSOP-28"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6128C584</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>BATTERY_MCP73833-FCI_UN</value>
+      <footprint>Semiconductor:MSOP-10</footprint>
+      <datasheet>${KNV_DATASHEET}\MICROCHIP MCP73833.pdf</datasheet>
+      <fields>
+        <field name="Comment">MCP73833-FCI/UN</field>
+        <field name="Manufacturer">MICROCHIP</field>
+        <field name="ManufacturerPartNo">MCP73833-FCI/UN</field>
+        <field name="Supplier">CHP-MCP73833-FCI/UN</field>
+      </fields>
+      <libsource lib="Others" part="BATTERY_MCP73833-FCI_UN" description="Battery Charger, SMT, MSOP-10"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612AC3BB</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>USB-B-04PFHTW</value>
+      <footprint>Connectors:T-T_USB-B-04PFHTW</footprint>
+      <datasheet>${KNV_DATASHEET}\T-T USB-B-04PFHTW.pdf</datasheet>
+      <fields>
+        <field name="Comment">USB-B-04PFHTW</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">USB-A-S04PFHTW;MX-67068-8000;</field>
+        <field name="Supplier">LOM-43-14-75;TME-MX-67068-8000;</field>
+      </fields>
+      <libsource lib="Connectors" part="USB-B-04PFHTW" description="Connector USB, USB B, Socket , 90°, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E68EA</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612ECAC5</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>Capacitator_0603_22pF_NP0</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">22pF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN220;</field>
+        <field name="Supplier">LOM-82-02-18;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_22pF_NP0" description="Capacitator, 22pF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612E9A58</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>Capacitator_0603_22pF_NP0</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">22pF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN220;</field>
+        <field name="Supplier">LOM-82-02-18;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_22pF_NP0" description="Capacitator, 22pF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612EE533</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61283D40</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612BD435</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>DISPLAY_REX012832FWPP3N01</value>
+      <footprint>Others:RAYSTAR_REX012832</footprint>
+      <datasheet>${KNV_DATASHEET}\RAYSTAR REX012832FWPP3N00001.pdf</datasheet>
+      <fields>
+        <field name="Comment">REX012832FWPP3N01</field>
+        <field name="Manufacturer">RAYSTAR OPTRONICS</field>
+        <field name="ManufacturerPartNo">REX012832FWPP3N00001</field>
+        <field name="Supplier">TME-REX012832FWPP3N01</field>
+      </fields>
+      <libsource lib="Others" part="DISPLAY_REX012832FWPP3N01" description="Display, Graphic,128x32, Blue, SMD, 30x11.5x1.26mm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612FBC0E</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>Capacitator_0603_10uF_X5R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">10uF</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="ManufacturerPartNo">GRM188R61A106KE69D</field>
+        <field name="Supplier">LOM-82-13-69;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_10uF_X5R" description="Capacitator, 10uF, 10V, 10%, X5R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612BB298</tstamp>
+    </comp>
+    <comp ref="F1">
+      <value>Polyfuse_1812_1100mA_33V</value>
+      <footprint>Passive:F_1812</footprint>
+      <datasheet>${KNV_DATASHEET}\Littelfuse 1812L.pdf</datasheet>
+      <fields>
+        <field name="Comment">1.1A/33V</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="ManufacturerPartNo">1812L110/33MR</field>
+        <field name="Supplier">LOM-44-03-25;TME-1812L110/33MR;MOU-576-1812L110/33MR</field>
+      </fields>
+      <libsource lib="Passive" part="Polyfuse_1812_1100mA_33V" description="Multifuse, 1100mA, 33V, SMT, 1812"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6145C70C</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>INTERFACE_FT230XS</value>
+      <footprint>Semiconductor:SSOP-16</footprint>
+      <datasheet>${KNV_DATASHEET}\FTDI FT230XS.pdf</datasheet>
+      <fields>
+        <field name="Comment">FT230XS-R</field>
+        <field name="Manufacturer">FTDI</field>
+        <field name="ManufacturerPartNo">FT230XS-R</field>
+        <field name="Supplier">FAR-2081321RL;TME-FT230XS-R;</field>
+      </fields>
+      <libsource lib="Others" part="INTERFACE_FT230XS" description="Interface, USB To UART, SMT, SSOP-16"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6148094E</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>Resistor_0603_27R0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">27R0</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7---27R 0.1W</field>
+        <field name="Supplier">LOM-80-14-23;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_27R0" description="Resistor, 27R0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61496653</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>Resistor_0603_27R0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">27R0</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7---27R 0.1W</field>
+        <field name="Supplier">LOM-80-14-23;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_27R0" description="Resistor, 27R0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61497F3C</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>Capacitator_0603_47pF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">47pF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN470</field>
+        <field name="Supplier">LOM-82-02-22</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_47pF_X7R" description="Capacitator, 47pF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61508C58</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61595410</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615AE1F9</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615B905F</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_0603_Green</value>
+      <footprint>Passive:LED_0603_GRE</footprint>
+      <fields>
+        <field name="Comment">Green</field>
+        <field name="Manufacturer">Hongli Tronic</field>
+        <field name="ManufacturerPartNo">HL-PST-1608U51GC</field>
+        <field name="Supplier">LOM-95-03-80;</field>
+      </fields>
+      <libsource lib="Passive" part="LED_0603_Green" description="LED, Green, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6161801E</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>Resistor_0603_470R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">470R</field>
+        <field name="Manufacturer">VIKING</field>
+        <field name="ManufacturerPartNo">WR06X4700FTL</field>
+        <field name="Supplier">LOM-80-31-61;TME-CQ0603-470R-1% ;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_470R" description="Resistor, 470R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61650880</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>LED_0603_Green</value>
+      <footprint>Passive:LED_0603_GRE</footprint>
+      <fields>
+        <field name="Comment">Green</field>
+        <field name="Manufacturer">Hongli Tronic</field>
+        <field name="ManufacturerPartNo">HL-PST-1608U51GC</field>
+        <field name="Supplier">LOM-95-03-80;</field>
+      </fields>
+      <libsource lib="Passive" part="LED_0603_Green" description="LED, Green, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61650E0F</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>Resistor_0603_470R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">470R</field>
+        <field name="Manufacturer">VIKING</field>
+        <field name="ManufacturerPartNo">WR06X4700FTL</field>
+        <field name="Supplier">LOM-80-31-61;TME-CQ0603-470R-1% ;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_470R" description="Resistor, 470R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61651D72</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>Capacitator_0603_47pF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">47pF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN470</field>
+        <field name="Supplier">LOM-82-02-22</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_47pF_X7R" description="Capacitator, 47pF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61507970</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>Capacitator_0603_2.2uF_X5R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">2.2uF</field>
+        <field name="Manufacturer">Walsin;</field>
+        <field name="ManufacturerPartNo">X225K6R3CT;</field>
+        <field name="Supplier">LOM-82-00-19;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_2.2uF_X5R" description="Capacitator, 2.2uF, 6.3V, 10%, X5R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6138A42F</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>Capacitator_0603_2.2uF_X5R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">2.2uF</field>
+        <field name="Manufacturer">Walsin;</field>
+        <field name="ManufacturerPartNo">X225K6R3CT;</field>
+        <field name="Supplier">LOM-82-00-19;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_2.2uF_X5R" description="Capacitator, 2.2uF, 6.3V, 10%, X5R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6138B66F</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_0603_Green</value>
+      <footprint>Passive:LED_0603_GRE</footprint>
+      <fields>
+        <field name="Comment">Green</field>
+        <field name="Manufacturer">Hongli Tronic</field>
+        <field name="ManufacturerPartNo">HL-PST-1608U51GC</field>
+        <field name="Supplier">LOM-95-03-80;</field>
+      </fields>
+      <libsource lib="Passive" part="LED_0603_Green" description="LED, Green, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61502350</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613D8B53</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E0C78</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>Capacitator_0603_2.2uF_X5R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">2.2uF</field>
+        <field name="Manufacturer">Walsin;</field>
+        <field name="ManufacturerPartNo">X225K6R3CT;</field>
+        <field name="Supplier">LOM-82-00-19;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_2.2uF_X5R" description="Capacitator, 2.2uF, 6.3V, 10%, X5R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614326E2</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>P-MOSFET_SI2315BDS-T1-E3</value>
+      <footprint>Semiconductor:SOT-23</footprint>
+      <datasheet>${KNV_DATASHEET}\VISHAY SI2315BDS.pdf</datasheet>
+      <fields>
+        <field name="Comment">SI2315BDS</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">SI2315BDS-T1-E3</field>
+        <field name="Supplier">LOM-86-02-81;FAR-1470105;LOM-86-03-94; FAR-2283650;TME-SI2315BDS-T1-E3;</field>
+      </fields>
+      <libsource lib="Others" part="P-MOSFET_SI2315BDS-T1-E3" description="MOSFET, P, SMD, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6144FBAD</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6145A4D2</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>Capacitator_0603_2.2uF_X5R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">2.2uF</field>
+        <field name="Manufacturer">Walsin;</field>
+        <field name="ManufacturerPartNo">X225K6R3CT;</field>
+        <field name="Supplier">LOM-82-00-19;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_2.2uF_X5R" description="Capacitator, 2.2uF, 6.3V, 10%, X5R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614A7573</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>Resistor_0603_150K</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">150K</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--150K 0.1W</field>
+        <field name="Supplier">LOM-80-13-95;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_150K" description="Resistor, 150K, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6141676B</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>Resistor_0603_470R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">470R</field>
+        <field name="Manufacturer">VIKING</field>
+        <field name="ManufacturerPartNo">WR06X4700FTL</field>
+        <field name="Supplier">LOM-80-31-61;TME-CQ0603-470R-1% ;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_470R" description="Resistor, 470R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61695330</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>Switch-Tact_OMRON-B3F-3100</value>
+      <footprint>Others:OMRON_B3F-3100</footprint>
+      <datasheet>${KNV_DATASHEET}\OMRON B3F-3100.pdf</datasheet>
+      <fields>
+        <field name="Comment">B3F-3100</field>
+        <field name="Manufacturer">OMRON OCB</field>
+        <field name="ManufacturerPartNo">B3F-3100 </field>
+        <field name="Supplier">TME-B3F-3100, FAR-959704,</field>
+      </fields>
+      <libsource lib="Others" part="Switch-Tact_OMRON-B3F-3100" description="Tact Switch, 6x6, 4P, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616FABD2</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61794D88</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>617B403C</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>617CB888</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>Capacitator_0603_1nF_NP0</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">10nF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN102;</field>
+        <field name="Supplier">LOM-82-06-33;LOM-82-09-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1nF_NP0" description="Capacitator, 1nF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>617EC8FE</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>Switch-Tact_OMRON-B3F-3100</value>
+      <footprint>Others:OMRON_B3F-3100</footprint>
+      <datasheet>${KNV_DATASHEET}\OMRON B3F-3100.pdf</datasheet>
+      <fields>
+        <field name="Comment">B3F-3100</field>
+        <field name="Manufacturer">OMRON OCB</field>
+        <field name="ManufacturerPartNo">B3F-3100 </field>
+        <field name="Supplier">TME-B3F-3100, FAR-959704,</field>
+      </fields>
+      <libsource lib="Others" part="Switch-Tact_OMRON-B3F-3100" description="Tact Switch, 6x6, 4P, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6180D9CE</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6180D9D8</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6180D9E9</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6180D9FC</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>Capacitator_0603_1nF_NP0</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">10nF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN102;</field>
+        <field name="Supplier">LOM-82-06-33;LOM-82-09-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1nF_NP0" description="Capacitator, 1nF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6180DA08</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>Switch-Tact_OMRON-B3F-3100</value>
+      <footprint>Others:OMRON_B3F-3100</footprint>
+      <datasheet>${KNV_DATASHEET}\OMRON B3F-3100.pdf</datasheet>
+      <fields>
+        <field name="Comment">B3F-3100</field>
+        <field name="Manufacturer">OMRON OCB</field>
+        <field name="ManufacturerPartNo">B3F-3100 </field>
+        <field name="Supplier">TME-B3F-3100, FAR-959704,</field>
+      </fields>
+      <libsource lib="Others" part="Switch-Tact_OMRON-B3F-3100" description="Tact Switch, 6x6, 4P, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>618882CE</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>618882D8</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>618882E9</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>Capacitator_0603_1nF_NP0</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">10nF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN102;</field>
+        <field name="Supplier">LOM-82-06-33;LOM-82-09-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1nF_NP0" description="Capacitator, 1nF, 50V, 5%, NP0, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61888308</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61965ED1</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>619686E2</tstamp>
+    </comp>
+    <comp ref="TH1">
+      <value>NTC_0603_10K</value>
+      <footprint>Passive:R_0603</footprint>
+      <datasheet>${KNV_DATASHEET}\SR PASSIVES NTC0603-10K-B2.pdf</datasheet>
+      <fields>
+        <field name="Comment">NTC 10K</field>
+        <field name="Manufacturer">SR PASSIVES;</field>
+        <field name="ManufacturerPartNo">NTC0603-10K-B2;</field>
+        <field name="Supplier">TME-NTC0603-10K-B2;</field>
+      </fields>
+      <libsource lib="Passive" part="NTC_0603_10K" description="NTC, 10K, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613B3A10</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>Resistor_0603_0R00</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">0R00</field>
+        <field name="Manufacturer">Yageo Corp.</field>
+        <field name="ManufacturerPartNo">RC0603JR-100RL;</field>
+        <field name="Supplier">LOM-81-34-80;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_0R00" description="Resistor, 0R00, 0.1W, 5%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E244E</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>Resistor_0603_R_DNP</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">DNP</field>
+        <field name="Manufacturer">~</field>
+        <field name="ManufacturerPartNo">~</field>
+        <field name="Supplier">~</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_R_DNP" description="Resistor, Do Not Populate, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6146ED81</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>Resistor_0603_1K00</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">1K00</field>
+        <field name="Manufacturer">VIKING;</field>
+        <field name="ManufacturerPartNo">CR-03FL7----1K 0.1W</field>
+        <field name="Supplier">LOM-80-11-59;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_1K00" description="Resistor, 1K00, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6149E6C6</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6156A144</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615DAC97</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>LED_0603_Blue</value>
+      <footprint>Passive:LED_0603_BLU</footprint>
+      <fields>
+        <field name="Comment">Blue</field>
+        <field name="Manufacturer">Hongli Tronic;</field>
+        <field name="ManufacturerPartNo">HL-PST-1608H203BC;</field>
+        <field name="Supplier">LOM-95-03-81;</field>
+      </fields>
+      <libsource lib="Passive" part="LED_0603_Blue" description="LED, Blue, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614FB12C</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>Resistor_0603_9K10</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">9K10</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">CRCW06039K10FKTABC</field>
+        <field name="Supplier">TME-CRCW06039K10FKTABC; RET-96-03-64;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_9K10" description="Resistor, 9K10, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616A6CA9</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>Resistor_0603_10R0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10R0</field>
+        <field name="Manufacturer">CR-03FL7---10R 0.1W</field>
+        <field name="ManufacturerPartNo">Viking Tech Corp.</field>
+        <field name="Supplier">LOM-80-11-87;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10R0" description="Resistor, 10R0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616EFE91</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>Capacitator_0603_47nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">47nF</field>
+        <field name="Manufacturer">Fenghua;</field>
+        <field name="ManufacturerPartNo">0603B473K500NT;</field>
+        <field name="Supplier">LOM-82-13-35;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_47nF_X7R" description="Capacitator, 47nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6171A6BF</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>Resistor_0603_10R0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10R0</field>
+        <field name="Manufacturer">CR-03FL7---10R 0.1W</field>
+        <field name="ManufacturerPartNo">Viking Tech Corp.</field>
+        <field name="Supplier">LOM-80-11-87;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10R0" description="Resistor, 10R0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61649BE4</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>Capacitator_0603_47nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">47nF</field>
+        <field name="Manufacturer">Fenghua;</field>
+        <field name="ManufacturerPartNo">0603B473K500NT;</field>
+        <field name="Supplier">LOM-82-13-35;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_47nF_X7R" description="Capacitator, 47nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616486B0</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615821BE</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61561D60</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>Capacitator_0603_2.2uF_X5R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">2.2uF</field>
+        <field name="Manufacturer">Walsin;</field>
+        <field name="ManufacturerPartNo">X225K6R3CT;</field>
+        <field name="Supplier">LOM-82-00-19;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_2.2uF_X5R" description="Capacitator, 2.2uF, 6.3V, 10%, X5R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61560B3E</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614EAA07</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614E9D30</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61345D7A</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>P-MOSFET_SI2315BDS-T1-E3</value>
+      <footprint>Semiconductor:SOT-23</footprint>
+      <datasheet>${KNV_DATASHEET}\VISHAY SI2315BDS.pdf</datasheet>
+      <fields>
+        <field name="Comment">SI2315BDS</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">SI2315BDS-T1-E3</field>
+        <field name="Supplier">LOM-86-02-81;FAR-1470105;LOM-86-03-94; FAR-2283650;TME-SI2315BDS-T1-E3;</field>
+      </fields>
+      <libsource lib="Others" part="P-MOSFET_SI2315BDS-T1-E3" description="MOSFET, P, SMD, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61326E99</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>Resistor_0603_R_DNP</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">DNP</field>
+        <field name="Manufacturer">~</field>
+        <field name="ManufacturerPartNo">~</field>
+        <field name="Supplier">~</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_R_DNP" description="Resistor, Do Not Populate, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6131C3CD</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>OPA_MCP6V36T-E_OT</value>
+      <footprint>Semiconductor:SOT-23-5</footprint>
+      <datasheet>${KNV_DATASHEET}\MICROCHIP MCP6V36.pdf</datasheet>
+      <fields>
+        <field name="Comment">MCP6V36T-E/OT</field>
+        <field name="Manufacturer">MICROCHIP </field>
+        <field name="ManufacturerPartNo">MCP6V36T-E/OT</field>
+        <field name="Supplier">CHP-MCP6V36T-E/OT, FAR-3232356</field>
+      </fields>
+      <libsource lib="Others" part="OPA_MCP6V36T-E_OT" description="OPA, SMT, SOT-23-5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61309516</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>Resistor_0603_470R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">470R</field>
+        <field name="Manufacturer">VIKING</field>
+        <field name="ManufacturerPartNo">WR06X4700FTL</field>
+        <field name="Supplier">LOM-80-31-61;TME-CQ0603-470R-1% ;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_470R" description="Resistor, 470R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61332797</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>Inductor_0805_10uH</value>
+      <footprint>Passive:L_0805</footprint>
+      <datasheet>${KNV_DATASHEET}\MURATA LQM21FN100N00L.PDF</datasheet>
+      <fields>
+        <field name="Comment">10uH</field>
+        <field name="Manufacturer">MURATA</field>
+        <field name="ManufacturerPartNo">LQM21FN100N00L</field>
+        <field name="Supplier">TME-LQM21FN100N00L;</field>
+      </fields>
+      <libsource lib="Passive" part="Inductor_0805_10uH" description="Inductor, 10uH, 60mA, SMT, 0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6132C539</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6132603E</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613235D1</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6131FBAE</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>Resistor_0603_0R00</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">0R00</field>
+        <field name="Manufacturer">Yageo Corp.</field>
+        <field name="ManufacturerPartNo">RC0603JR-100RL;</field>
+        <field name="Supplier">LOM-81-34-80;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_0R00" description="Resistor, 0R00, 0.1W, 5%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613144D1</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>NPN_BC817</value>
+      <footprint>Semiconductor:SOT-23</footprint>
+      <datasheet>${KNV_DATASHEET}\ON BC817.pdf</datasheet>
+      <fields>
+        <field name="Comment">BC817</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="ManufacturerPartNo">BC817-25LT1G</field>
+        <field name="Supplier">LOM-86-01-90;FAR-1130682;RSC-748-4997;TME-BC817-25LT1G</field>
+      </fields>
+      <libsource lib="Others" part="NPN_BC817" description="Transistor, NPN, SMT, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61309DE2</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>LDO_MCP1700T-3302E_TT</value>
+      <footprint>Semiconductor:SOT-23</footprint>
+      <datasheet>${KNV_DATASHEET}\MICROCHIP MCP1700T3302ETT.pdf</datasheet>
+      <fields>
+        <field name="Comment">MCP1700T-3302E/TT</field>
+        <field name="Manufacturer">MICROCHIP</field>
+        <field name="ManufacturerPartNo">MCP1700T-3302E/TT</field>
+        <field name="Supplier">TME-MCP1700T3302ETT; FAR-1296592;</field>
+      </fields>
+      <libsource lib="Others" part="LDO_MCP1700T-3302E_TT" description="LDO, 3.3V, SMT, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612BD3E2</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>Resistor_0603_470R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">470R</field>
+        <field name="Manufacturer">VIKING</field>
+        <field name="ManufacturerPartNo">WR06X4700FTL</field>
+        <field name="Supplier">LOM-80-31-61;TME-CQ0603-470R-1% ;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_470R" description="Resistor, 470R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6128B060</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED_0603_Green</value>
+      <footprint>Passive:LED_0603_GRE</footprint>
+      <fields>
+        <field name="Comment">Green</field>
+        <field name="Manufacturer">Hongli Tronic</field>
+        <field name="ManufacturerPartNo">HL-PST-1608U51GC</field>
+        <field name="Supplier">LOM-95-03-80;</field>
+      </fields>
+      <libsource lib="Passive" part="LED_0603_Green" description="LED, Green, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61289879</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>NPN_BC817</value>
+      <footprint>Semiconductor:SOT-23</footprint>
+      <datasheet>${KNV_DATASHEET}\ON BC817.pdf</datasheet>
+      <fields>
+        <field name="Comment">BC817</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="ManufacturerPartNo">BC817-25LT1G</field>
+        <field name="Supplier">LOM-86-01-90;FAR-1130682;RSC-748-4997;TME-BC817-25LT1G</field>
+      </fields>
+      <libsource lib="Others" part="NPN_BC817" description="Transistor, NPN, SMT, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6180F5AD</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6142B31D</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6141F586</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>Capacitator_0603_100nF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_100nF_X7R" description="Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E1E6A</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>Resistor_0603_10K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_10K0" description="Resistor, 10K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61981B4F</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A125BD</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A13545</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61A89433</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>SENSOR_BMA250E</value>
+      <footprint>Semiconductor:LGA-12</footprint>
+      <datasheet>${KNV_DATASHEET}\BOSCH BMA250E.pdf</datasheet>
+      <fields>
+        <field name="Comment">BMA250E</field>
+        <field name="Manufacturer">Bosch</field>
+        <field name="ManufacturerPartNo">BMA250E</field>
+        <field name="Supplier">ebay</field>
+      </fields>
+      <libsource lib="Others" part="SENSOR_BMA250E" description="Sensor, Acclereometer, SMT, LGA-12"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61367067</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>DIODE_BAT54S</value>
+      <footprint>Semiconductor:SOT-23</footprint>
+      <datasheet>${KNV_DATASHEET}\VISHAY BAT54S.pdf</datasheet>
+      <fields>
+        <field name="Comment">BAT54S</field>
+        <field name="Manufacturer">VISHAY;</field>
+        <field name="ManufacturerPartNo">BAT54S;</field>
+        <field name="Supplier">TME-BAT54S-DIO;FAR-2677691;</field>
+      </fields>
+      <libsource lib="Others" part="DIODE_BAT54S" description="Diode, SMT, SOT-23"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616158D2</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>Resistor_0603_1K00</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">1K00</field>
+        <field name="Manufacturer">VIKING;</field>
+        <field name="ManufacturerPartNo">CR-03FL7----1K 0.1W</field>
+        <field name="Supplier">LOM-80-11-59;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_1K00" description="Resistor, 1K00, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>614584DA</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>Filter_0805_BLM21A102SPT</value>
+      <footprint>Passive:L_0805</footprint>
+      <datasheet>${KNV_DATASHEET}\MURATA BLM21A.pdf</datasheet>
+      <fields>
+        <field name="Comment">1K00@100MHz</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="ManufacturerPartNo">BLM21A102SPT</field>
+        <field name="Supplier">TME-BLM21A102SPT</field>
+      </fields>
+      <libsource lib="Passive" part="Filter_0805_BLM21A102SPT" description="Filter, 200mA, 1K00, SMT, 0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615AC1DB</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>Filter_0603_CB03YTYH101</value>
+      <footprint>Passive:L_0603</footprint>
+      <datasheet>${KNV_DATASHEET}\VIKING CB.pdf</datasheet>
+      <fields>
+        <field name="Comment">100R@100MHz</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CB03YTYH101</field>
+        <field name="Supplier">LOM-93-03-73</field>
+      </fields>
+      <libsource lib="Passive" part="Filter_0603_CB03YTYH101" description="Filter, 2.5A, 100R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>616017D5</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>PinHeader_01x01_Male</value>
+      <footprint>Connectors:PinHeader_1x01_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Comment">PinHeader_01x01_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
+      </fields>
+      <libsource lib="Connectors" part="PinHeader_01x01_Male" description="Connector Pin Header, 01x01, 2.54, 90, Male, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6152A636</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>PinHeader_01x01_Male</value>
+      <footprint>Connectors:PinHeader_1x01_P2.54mm_Horizontal</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Comment">PinHeader_01x01_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
+      </fields>
+      <libsource lib="Connectors" part="PinHeader_01x01_Male" description="Connector Pin Header, 01x01, 2.54, 90, Male, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6153CD93</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>Resistor_0603_39K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">39K0</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">CRCW060339K0FKTABC</field>
+        <field name="Supplier">TME-CRCW060339K0FKTABC;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_39K0" description="Resistor, 39K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615960D3</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>Resistor_0603_11K0</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">11K0</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">Viking Tech Corp.</field>
+        <field name="Supplier">LOM-80-14-50;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_11K0" description="Resistor, 11K0, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615EE8C3</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>Resistor_0603_4K70</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_4K70" description="Resistor, 4K70, 0.1W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>618882FC</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>Crystal_SMD3225_12MHz</value>
+      <footprint>Passive:Crystal_SMD_3225</footprint>
+      <datasheet>${KNV_DATASHEET}\NSK NXK-32.pdf</datasheet>
+      <fields>
+        <field name="Comment">12MHz</field>
+        <field name="Manufacturer">NSK</field>
+        <field name="ManufacturerPartNo">SMD/NXK-32 12MHz</field>
+        <field name="Supplier">LOM-40-02-17;</field>
+      </fields>
+      <libsource lib="Passive" part="Crystal_SMD3225_12MHz" description="Crystal, 8MHz, SMT, 3.2x2.5mm"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61822DF3</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>PinHeader_01x02_Male</value>
+      <footprint>Connectors:PinHeader_1x02_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <fields>
+        <field name="Comment">PinHeader_01x02_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
+      </fields>
+      <libsource lib="Connectors" part="PinHeader_01x02_Male" description="Connector Pin Header, 01x02, 2.54, 180, Male, THT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6148E22F</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>Resistor_0603_220R</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_220R" description="Resistor, 220R, 0.125W, 1%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615B13C9</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>Capacitator_0603_1uF_X7R</value>
+      <footprint>Passive:C_0603</footprint>
+      <fields>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <libsource lib="Passive" part="Capacitator_0603_1uF_X7R" description="Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>612F478B</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>Resistor_0603_0R00</value>
+      <footprint>Passive:R_0603</footprint>
+      <fields>
+        <field name="Comment">0R00</field>
+        <field name="Manufacturer">Yageo Corp.</field>
+        <field name="ManufacturerPartNo">RC0603JR-100RL;</field>
+        <field name="Supplier">LOM-81-34-80;</field>
+      </fields>
+      <libsource lib="Passive" part="Resistor_0603_0R00" description="Resistor, 0R00, 0.1W, 5%, SMT, 0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>62325F14</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="Connectors" part="Conn_01x06_Female">
-      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+    <libpart lib="Connectors" part="PinHeader_01x01_Male">
+      <description>Connector Pin Header, 01x01, 2.54, 90, Male, THT</description>
       <docs>~</docs>
       <footprints>
         <fp>Connector*:*_1x??_*</fp>
       </footprints>
       <fields>
         <field name="Reference">J</field>
-        <field name="Value">Conn_01x06_Female</field>
+        <field name="Value">PinHeader_01x01_Male</field>
+        <field name="Footprint">Connectors:PinHeader_1x01_P2.54mm_Horizontal</field>
+        <field name="Comment">PinHeader_01x01_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connectors" part="PinHeader_01x02_Male">
+      <description>Connector Pin Header, 01x02, 2.54, 180, Male, THT</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PinHeader_01x02_Male</field>
+        <field name="Footprint">Connectors:PinHeader_1x02_P2.54mm_Vertical</field>
+        <field name="Comment">PinHeader_01x02_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connectors" part="PinHeader_01x06_Male">
+      <description>Connector Pin Header, 01x06, 2.54, 180, Male, THT</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">PinHeader_01x06_Male</field>
+        <field name="Footprint">Connectors:PinHeader_1x06_P2.54mm_Vertical</field>
+        <field name="Comment">PinHeader_01x06_Male</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">PHSS-40-6/3</field>
+        <field name="Supplier">LOM-43-00-73</field>
       </fields>
       <pins>
         <pin num="1" name="Pin_1" type="passive"/>
@@ -55,34 +1541,812 @@
         <pin num="6" name="Pin_6" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Processors" part="PIC32MM0064GPL028-I_SO">
-      <description>Controller, PIC32MM, SMT, SO-28-300</description>
-      <docs>..\KiCad\Datasheet\MICROCHIP-PIC32MM0064GPL036.pdf</docs>
+    <libpart lib="Connectors" part="USB-B-04PFHTW">
+      <description>Connector USB, USB B, Socket , 90°, THT</description>
+      <docs>${KNV_DATASHEET}\T-T USB-B-04PFHTW.pdf</docs>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
       <fields>
-        <field name="Reference">U</field>
-        <field name="Value">PIC32MM0064GPL028-I_SO</field>
-        <field name="Footprint">Integrated Circuits:SOIC-28W</field>
+        <field name="Reference">J</field>
+        <field name="Value">USB-B-04PFHTW</field>
+        <field name="Footprint">Connectors:T-T_USB-B-04PFHTW</field>
+        <field name="Comment">USB-B-04PFHTW</field>
+        <field name="Manufacturer">T&amp;T CONNECTION</field>
+        <field name="ManufacturerPartNo">USB-A-S04PFHTW;MX-67068-8000;</field>
+        <field name="Supplier">LOM-43-14-75;TME-MX-67068-8000;</field>
       </fields>
       <pins>
-        <pin num="1" name="MCLR" type="input"/>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="GND" type="power_out"/>
+        <pin num="5" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="BATTERY_L402036">
+      <description>Battery, LiPo, 3.7V, 220mAh, 4.5x21x38.5mm</description>
+      <docs>${KNV_DATASHEET}\CELLEVIA LP402036.pdf</docs>
+      <fields>
+        <field name="Reference">B</field>
+        <field name="Value">BATTERY_L402036</field>
+        <field name="Footprint">Others:CELLEVIA_L402036</field>
+        <field name="Comment">Battery 3.7V/220mAh</field>
+        <field name="Manufacturer">CELLEVIA BATTERIES</field>
+        <field name="ManufacturerPartNo">L402036</field>
+        <field name="Supplier">TME-ACCU-LP402036/CL;</field>
+      </fields>
+    </libpart>
+    <libpart lib="Others" part="BATTERY_MCP73833-FCI_UN">
+      <description>Battery Charger, SMT, MSOP-10</description>
+      <docs>${KNV_DATASHEET}\MICROCHIP MCP73833.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">BATTERY_MCP73833-FCI_UN</field>
+        <field name="Footprint">Semiconductor:MSOP-10</field>
+        <field name="Comment">MCP73833-FCI/UN</field>
+        <field name="Manufacturer">MICROCHIP</field>
+        <field name="ManufacturerPartNo">MCP73833-FCI/UN</field>
+        <field name="Supplier">CHP-MCP73833-FCI/UN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="VDD" type="power_in"/>
+        <pin num="3" name="STA1" type="output"/>
+        <pin num="4" name="STA2" type="output"/>
+        <pin num="5" name="VSS" type="power_in"/>
+        <pin num="6" name="PRG" type="passive"/>
+        <pin num="7" name="PG#" type="passive"/>
+        <pin num="8" name="TEMP" type="passive"/>
+        <pin num="9" name="VBAT" type="passive"/>
+        <pin num="10" name="VBAT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="DIODE_BAT54S">
+      <description>Diode, SMT, SOT-23</description>
+      <docs>${KNV_DATASHEET}\VISHAY BAT54S.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">DIODE_BAT54S</field>
+        <field name="Footprint">Semiconductor:SOT-23</field>
+        <field name="Comment">BAT54S</field>
+        <field name="Manufacturer">VISHAY;</field>
+        <field name="ManufacturerPartNo">BAT54S;</field>
+        <field name="Supplier">TME-BAT54S-DIO;FAR-2677691;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="DISPLAY_REX012832FWPP3N01">
+      <description>Display, Graphic,128x32, Blue, SMD, 30x11.5x1.26mm</description>
+      <docs>${KNV_DATASHEET}\RAYSTAR REX012832FWPP3N00001.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DISPLAY_REX012832FWPP3N01</field>
+        <field name="Footprint">Others:RAYSTAR_REX012832</field>
+        <field name="Comment">REX012832FWPP3N01</field>
+        <field name="Manufacturer">RAYSTAR OPTRONICS</field>
+        <field name="ManufacturerPartNo">REX012832FWPP3N00001</field>
+        <field name="Supplier">TME-REX012832FWPP3N01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="C2P" type="passive"/>
+        <pin num="2" name="C2N" type="passive"/>
+        <pin num="3" name="C1P" type="passive"/>
+        <pin num="4" name="C1N" type="passive"/>
+        <pin num="5" name="VBAT" type="power_in"/>
+        <pin num="6" name="NC" type="passive"/>
+        <pin num="7" name="VSS" type="passive"/>
+        <pin num="8" name="VDD" type="power_in"/>
+        <pin num="9" name="RES#" type="input"/>
+        <pin num="10" name="SCL" type="input"/>
+        <pin num="11" name="SDA" type="BiDi"/>
+        <pin num="12" name="IREF" type="passive"/>
+        <pin num="13" name="COM" type="passive"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="INTERFACE_FT230XS">
+      <description>Interface, USB To UART, SMT, SSOP-16</description>
+      <docs>${KNV_DATASHEET}\FTDI FT230XS.pdf</docs>
+      <footprints>
+        <fp>SSOP*3.9x4.9*P0.635mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">INTERFACE_FT230XS</field>
+        <field name="Footprint">Semiconductor:SSOP-16</field>
+        <field name="Comment">FT230XS-R</field>
+        <field name="Manufacturer">FTDI</field>
+        <field name="ManufacturerPartNo">FT230XS-R</field>
+        <field name="Supplier">FAR-2081321RL;TME-FT230XS-R;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TXD" type="output"/>
+        <pin num="2" name="~RTS" type="output"/>
+        <pin num="3" name="VCCIO" type="power_in"/>
+        <pin num="4" name="RXD" type="input"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="~CTS" type="input"/>
+        <pin num="7" name="CBUS2" type="BiDi"/>
+        <pin num="8" name="USBDP" type="BiDi"/>
+        <pin num="9" name="USBDM" type="BiDi"/>
+        <pin num="10" name="3V3OUT" type="power_out"/>
+        <pin num="11" name="~RESET" type="input"/>
+        <pin num="12" name="VCC" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="CBUS1" type="BiDi"/>
+        <pin num="15" name="CBUS0" type="BiDi"/>
+        <pin num="16" name="CBUS3" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="LDO_MCP1700T-3302E_TT">
+      <description>LDO, 3.3V, SMT, SOT-23</description>
+      <docs>${KNV_DATASHEET}\MICROCHIP MCP1700T3302ETT.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LDO_MCP1700T-3302E_TT</field>
+        <field name="Footprint">Semiconductor:SOT-23</field>
+        <field name="Comment">MCP1700T-3302E/TT</field>
+        <field name="Manufacturer">MICROCHIP</field>
+        <field name="ManufacturerPartNo">MCP1700T-3302E/TT</field>
+        <field name="Supplier">TME-MCP1700T3302ETT; FAR-1296592;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="NPN_BC817">
+      <description>Transistor, NPN, SMT, SOT-23</description>
+      <docs>${KNV_DATASHEET}\ON BC817.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">NPN_BC817</field>
+        <field name="Footprint">Semiconductor:SOT-23</field>
+        <field name="Comment">BC817</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="ManufacturerPartNo">BC817-25LT1G</field>
+        <field name="Supplier">LOM-86-01-90;FAR-1130682;RSC-748-4997;TME-BC817-25LT1G</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="input"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="OPA_MCP6V36T-E_OT">
+      <description>OPA, SMT, SOT-23-5</description>
+      <docs>${KNV_DATASHEET}\MICROCHIP MCP6V36.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">OPA_MCP6V36T-E_OT</field>
+        <field name="Footprint">Semiconductor:SOT-23-5</field>
+        <field name="Manufacturer">MICROCHIP </field>
+        <field name="Comment">MCP6V36T-E/OT</field>
+        <field name="ManufacturerPartNo">MCP6V36T-E/OT</field>
+        <field name="Supplier">CHP-MCP6V36T-E/OT, FAR-3232356</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="~" type="power_in"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="~" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="P-MOSFET_SI2315BDS-T1-E3">
+      <description>MOSFET, P, SMD, SOT-23</description>
+      <docs>${KNV_DATASHEET}\VISHAY SI2315BDS.pdf</docs>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">P-MOSFET_SI2315BDS-T1-E3</field>
+        <field name="Footprint">Semiconductor:SOT-23</field>
+        <field name="Comment">SI2315BDS</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">SI2315BDS-T1-E3</field>
+        <field name="Supplier">LOM-86-02-81;FAR-1470105;LOM-86-03-94; FAR-2283650;TME-SI2315BDS-T1-E3;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="SENSOR_BMA250E">
+      <description>Sensor, Acclereometer, SMT, LGA-12</description>
+      <docs>${KNV_DATASHEET}\BOSCH BMA250E.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SENSOR_BMA250E</field>
+        <field name="Footprint">Semiconductor:LGA-12</field>
+        <field name="Comment">BMA250E</field>
+        <field name="Manufacturer">Bosch</field>
+        <field name="ManufacturerPartNo">BMA250E</field>
+        <field name="Supplier">ebay</field>
+      </fields>
+      <pins>
+        <pin num="1" name="ADD" type="input"/>
+        <pin num="2" name="SDA" type="BiDi"/>
+        <pin num="3" name="VDIO" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="INT1" type="output"/>
+        <pin num="6" name="INT2" type="output"/>
+        <pin num="7" name="VDD" type="power_in"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="NC" type="NotConnected"/>
+        <pin num="11" name="PS" type="input"/>
+        <pin num="12" name="SCL" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Others" part="Switch-Tact_OMRON-B3F-3100">
+      <description>Tact Switch, 6x6, 4P, THT</description>
+      <docs>${KNV_DATASHEET}\OMRON B3F-3100.pdf</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">Switch-Tact_OMRON-B3F-3100</field>
+        <field name="Footprint">Others:OMRON_B3F-3100</field>
+        <field name="Comment">B3F-3100</field>
+        <field name="Manufacturer">OMRON OCB</field>
+        <field name="ManufacturerPartNo">B3F-3100 </field>
+        <field name="Supplier">TME-B3F-3100, FAR-959704,</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_100nF_X7R">
+      <description>Capacitator, 100nF, 50V, 10%, X7R, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_100nF_X7R</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">100nF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R9BB104</field>
+        <field name="Supplier">LOM-82-03-47;TME-CC0603KRX7R9BB104;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_10uF_X5R">
+      <description>Capacitator, 10uF, 10V, 10%, X5R, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_10uF_X5R</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">10uF</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="ManufacturerPartNo">GRM188R61A106KE69D</field>
+        <field name="Supplier">LOM-82-13-69;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_1nF_NP0">
+      <description>Capacitator, 1nF, 50V, 5%, NP0, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_1nF_NP0</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">10nF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN102;</field>
+        <field name="Supplier">LOM-82-06-33;LOM-82-09-55;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_1uF_X7R">
+      <description>Capacitator, 1uF, 16V, 10%, X7R, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_1uF_X7R</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">1uF</field>
+        <field name="Manufacturer">YAGEO;</field>
+        <field name="ManufacturerPartNo">CC0603KRX7R7BB105;</field>
+        <field name="Supplier">LOM-82-06-80;TME-CC0603KRX7R7105;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_2.2uF_X5R">
+      <description>Capacitator, 2.2uF, 6.3V, 10%, X5R, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_2.2uF_X5R</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">2.2uF</field>
+        <field name="Manufacturer">Walsin;</field>
+        <field name="ManufacturerPartNo">X225K6R3CT;</field>
+        <field name="Supplier">LOM-82-00-19;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_22pF_NP0">
+      <description>Capacitator, 22pF, 50V, 5%, NP0, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_22pF_NP0</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">22pF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN220;</field>
+        <field name="Supplier">LOM-82-02-18;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_47nF_X7R">
+      <description>Capacitator, 47nF, 50V, 10%, X7R, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_47nF_X7R</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">47nF</field>
+        <field name="Manufacturer">Fenghua;</field>
+        <field name="ManufacturerPartNo">0603B473K500NT;</field>
+        <field name="Supplier">LOM-82-13-35;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Capacitator_0603_47pF_X7R">
+      <description>Capacitator, 47pF, 50V, 5%, NP0, SMT, 0603</description>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">Capacitator_0603_47pF_X7R</field>
+        <field name="Footprint">Passive:C_0603</field>
+        <field name="Comment">47pF</field>
+        <field name="Manufacturer">YAGEO</field>
+        <field name="ManufacturerPartNo">CC0603JRNP09BN470</field>
+        <field name="Supplier">LOM-82-02-22</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Crystal_SMD3225_12MHz">
+      <description>Crystal, 8MHz, SMT, 3.2x2.5mm</description>
+      <docs>${KNV_DATASHEET}\NSK NXK-32.pdf</docs>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_SMD3225_12MHz</field>
+        <field name="Footprint">Passive:Crystal_SMD_3225</field>
+        <field name="Comment">12MHz</field>
+        <field name="Manufacturer">NSK</field>
+        <field name="ManufacturerPartNo">SMD/NXK-32 12MHz</field>
+        <field name="Supplier">LOM-40-02-17;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Filter_0603_CB03YTYH101">
+      <description>Filter, 2.5A, 100R, SMT, 0603</description>
+      <docs>${KNV_DATASHEET}\VIKING CB.pdf</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">Filter_0603_CB03YTYH101</field>
+        <field name="Footprint">Passive:L_0603</field>
+        <field name="Comment">100R@100MHz</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CB03YTYH101</field>
+        <field name="Supplier">LOM-93-03-73</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Filter_0805_BLM21A102SPT">
+      <description>Filter, 200mA, 1K00, SMT, 0805</description>
+      <docs>${KNV_DATASHEET}\MURATA BLM21A.pdf</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">Filter_0805_BLM21A102SPT</field>
+        <field name="Footprint">Passive:L_0805</field>
+        <field name="Comment">1K00@100MHz</field>
+        <field name="Manufacturer">Murata</field>
+        <field name="ManufacturerPartNo">BLM21A102SPT</field>
+        <field name="Supplier">TME-BLM21A102SPT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Inductor_0805_10uH">
+      <description>Inductor, 10uH, 60mA, SMT, 0805</description>
+      <docs>${KNV_DATASHEET}\MURATA LQM21FN100N00L.PDF</docs>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">Inductor_0805_10uH</field>
+        <field name="Footprint">Passive:L_0805</field>
+        <field name="Comment">10uH</field>
+        <field name="Manufacturer">MURATA</field>
+        <field name="ManufacturerPartNo">LQM21FN100N00L</field>
+        <field name="Supplier">TME-LQM21FN100N00L;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="LED_0603_Blue">
+      <description>LED, Blue, SMT, 0603</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_0603_Blue</field>
+        <field name="Footprint">Passive:LED_0603_BLU</field>
+        <field name="Comment">Blue</field>
+        <field name="Manufacturer">Hongli Tronic;</field>
+        <field name="ManufacturerPartNo">HL-PST-1608H203BC;</field>
+        <field name="Supplier">LOM-95-03-81;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="LED_0603_Green">
+      <description>LED, Green, SMT, 0603</description>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_0603_Green</field>
+        <field name="Footprint">Passive:LED_0603_GRE</field>
+        <field name="Comment">Green</field>
+        <field name="Manufacturer">Hongli Tronic</field>
+        <field name="ManufacturerPartNo">HL-PST-1608U51GC</field>
+        <field name="Supplier">LOM-95-03-80;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="NTC_0603_10K">
+      <description>NTC, 10K, SMT, 0603</description>
+      <docs>${KNV_DATASHEET}\SR PASSIVES NTC0603-10K-B2.pdf</docs>
+      <footprints>
+        <fp>*NTC*</fp>
+        <fp>*Thermistor*</fp>
+        <fp>PIN?ARRAY*</fp>
+        <fp>bornier*</fp>
+        <fp>*Terminal?Block*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TH</field>
+        <field name="Value">NTC_0603_10K</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">NTC 10K</field>
+        <field name="Manufacturer">SR PASSIVES;</field>
+        <field name="ManufacturerPartNo">NTC0603-10K-B2;</field>
+        <field name="Supplier">TME-NTC0603-10K-B2;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Polyfuse_1812_1100mA_33V">
+      <description>Multifuse, 1100mA, 33V, SMT, 1812</description>
+      <docs>${KNV_DATASHEET}\Littelfuse 1812L.pdf</docs>
+      <footprints>
+        <fp>*polyfuse*</fp>
+        <fp>*PTC*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">Polyfuse_1812_1100mA_33V</field>
+        <field name="Footprint">Passive:F_1812</field>
+        <field name="Comment">1.1A/33V</field>
+        <field name="Manufacturer">Littelfuse</field>
+        <field name="ManufacturerPartNo">1812L110/33MR</field>
+        <field name="Supplier">LOM-44-03-25;TME-1812L110/33MR;MOU-576-1812L110/33MR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_0R00">
+      <description>Resistor, 0R00, 0.1W, 5%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_0R00</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">0R00</field>
+        <field name="Manufacturer">Yageo Corp.</field>
+        <field name="ManufacturerPartNo">RC0603JR-100RL;</field>
+        <field name="Supplier">LOM-81-34-80;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_10K0">
+      <description>Resistor, 10K0, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_10K0</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">10K0</field>
+        <field name="Manufacturer">ASJ</field>
+        <field name="ManufacturerPartNo">CR16-1002-FK</field>
+        <field name="Supplier">LOM-80-15-13;TME-CRCW060310K0FKTABC;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_10R0">
+      <description>Resistor, 10R0, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_10R0</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">10R0</field>
+        <field name="Manufacturer">CR-03FL7---10R 0.1W</field>
+        <field name="ManufacturerPartNo">Viking Tech Corp.</field>
+        <field name="Supplier">LOM-80-11-87;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_11K0">
+      <description>Resistor, 11K0, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_11K0</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">11K0</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">Viking Tech Corp.</field>
+        <field name="Supplier">LOM-80-14-50;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_150K">
+      <description>Resistor, 150K, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_150K</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">150K</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--150K 0.1W</field>
+        <field name="Supplier">LOM-80-13-95;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_1K00">
+      <description>Resistor, 1K00, 0.1W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_1K00</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">1K00</field>
+        <field name="Manufacturer">VIKING;</field>
+        <field name="ManufacturerPartNo">CR-03FL7----1K 0.1W</field>
+        <field name="Supplier">LOM-80-11-59;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_220R">
+      <description>Resistor, 220R, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_220R</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">220R</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7--220R 0.1W</field>
+        <field name="Supplier">LOM-80-11-55;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_27R0">
+      <description>Resistor, 27R0, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_27R0</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">27R0</field>
+        <field name="Manufacturer">Viking Tech Corp.</field>
+        <field name="ManufacturerPartNo">CR-03FL7---27R 0.1W</field>
+        <field name="Supplier">LOM-80-14-23;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_39K0">
+      <description>Resistor, 39K0, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_39K0</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">39K0</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">CRCW060339K0FKTABC</field>
+        <field name="Supplier">TME-CRCW060339K0FKTABC;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_470R">
+      <description>Resistor, 470R, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_470R</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">470R</field>
+        <field name="Manufacturer">VIKING</field>
+        <field name="ManufacturerPartNo">WR06X4700FTL</field>
+        <field name="Supplier">LOM-80-31-61;TME-CQ0603-470R-1% ;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_4K70">
+      <description>Resistor, 4K70, 0.1W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_4K70</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">4K70</field>
+        <field name="Manufacturer">ROYAL OHM;</field>
+        <field name="ManufacturerPartNo">CQ0603-4K7-1%;</field>
+        <field name="Supplier">LOM-80-11-85;TME-CRCW06034K70FKEA;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_9K10">
+      <description>Resistor, 9K10, 0.125W, 1%, SMT, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_9K10</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">9K10</field>
+        <field name="Manufacturer">VISHAY</field>
+        <field name="ManufacturerPartNo">CRCW06039K10FKTABC</field>
+        <field name="Supplier">TME-CRCW06039K10FKTABC; RET-96-03-64;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Passive" part="Resistor_0603_R_DNP">
+      <description>Resistor, Do Not Populate, 0603</description>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">Resistor_0603_R_DNP</field>
+        <field name="Footprint">Passive:R_0603</field>
+        <field name="Comment">DNP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Processors" part="PIC32MX170F256B-ISS">
+      <description>Controller, PIC32MX, SMT, SSOP-28</description>
+      <docs>${KNV_DATASHEET}\MICROCHIP PIC32MX230F256B.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PIC32MX170F256B-ISS</field>
+        <field name="Footprint">Semiconductor:SSOP-28</field>
+        <field name="Comment">PIC32MX170F256B</field>
+        <field name="Manufacturer">MICROCHIP</field>
+        <field name="ManufacturerPartNo">PIC32MX170F256B-I/SS</field>
+        <field name="Supplier">FAR-3636831;TME-PIC32MX170F256B-I/SS;</field>
+      </fields>
+      <pins>
+        <pin num="1" name="MCLR#" type="input"/>
         <pin num="2" name="RA0" type="BiDi"/>
         <pin num="3" name="RA1" type="BiDi"/>
-        <pin num="4" name="RB0" type="BiDi"/>
-        <pin num="5" name="RB1" type="BiDi"/>
+        <pin num="4" name="PGED1" type="BiDi"/>
+        <pin num="5" name="PGEC1" type="BiDi"/>
         <pin num="6" name="RB2" type="BiDi"/>
         <pin num="7" name="RB3" type="BiDi"/>
         <pin num="8" name="VSS" type="power_in"/>
-        <pin num="9" name="RA2" type="BiDi"/>
-        <pin num="10" name="RA3" type="BiDi"/>
+        <pin num="9" name="OSC1" type="passive"/>
+        <pin num="10" name="OSC2" type="passive"/>
         <pin num="11" name="RB4" type="BiDi"/>
         <pin num="12" name="RA4" type="BiDi"/>
-        <pin num="13" name="VDD" type="BiDi"/>
+        <pin num="13" name="VDD" type="power_in"/>
         <pin num="14" name="RB5" type="BiDi"/>
         <pin num="15" name="RB6" type="BiDi"/>
         <pin num="16" name="RB7" type="BiDi"/>
         <pin num="17" name="RB8" type="BiDi"/>
         <pin num="18" name="RB9" type="BiDi"/>
-        <pin num="19" name="RC9" type="BiDi"/>
+        <pin num="19" name="VSS" type="power_in"/>
         <pin num="20" name="VCAP" type="passive"/>
         <pin num="21" name="RB10" type="BiDi"/>
         <pin num="22" name="RB11" type="BiDi"/>
@@ -97,114 +2361,490 @@
   </libparts>
   <libraries>
     <library logical="Connectors">
-      <uri>D:\@@@!ProjectS\Cirucits\KiCad\Connectors.lib</uri>
+      <uri>D:/@@@!ProjectS/Cirucits/KiCad/Connectors.lib</uri>
+    </library>
+    <library logical="Others">
+      <uri>D:/@@@!ProjectS/Cirucits/KiCad/Others.lib</uri>
+    </library>
+    <library logical="Passive">
+      <uri>D:/@@@!ProjectS/Cirucits/KiCad/Passive.lib</uri>
     </library>
     <library logical="Processors">
-      <uri>D:\@@@!ProjectS\Cirucits\KiCad\Processors.lib</uri>
+      <uri>D:/@@@!ProjectS/Cirucits/KiCad/Processors.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(U1-Pad27)">
+    <net code="1" name="GNDD">
+      <node ref="C27" pin="2"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U5" pin="13"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U7" pin="7"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="R35" pin="2"/>
+      <node ref="J1" pin="3"/>
       <node ref="U1" pin="27"/>
-    </net>
-    <net code="2" name="Net-(U1-Pad28)">
-      <node ref="U1" pin="28"/>
-    </net>
-    <net code="3" name="Net-(U1-Pad3)">
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="4" name="Net-(U1-Pad4)">
-      <node ref="U1" pin="4"/>
-    </net>
-    <net code="5" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="6" name="Net-(U1-Pad6)">
-      <node ref="U1" pin="6"/>
-    </net>
-    <net code="7" name="Net-(U1-Pad7)">
-      <node ref="U1" pin="7"/>
-    </net>
-    <net code="8" name="Net-(U1-Pad8)">
+      <node ref="U1" pin="19"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C36" pin="2"/>
+      <node ref="J5" pin="1"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="J3" pin="1"/>
+      <node ref="Y1" pin="4"/>
+      <node ref="Y1" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U4" pin="9"/>
+      <node ref="U4" pin="8"/>
+      <node ref="D2" pin="1"/>
+      <node ref="C23" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="U4" pin="1"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="R42" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="R11" pin="1"/>
+      <node ref="R29" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="J2" pin="4"/>
+      <node ref="J2" pin="5"/>
+      <node ref="C34" pin="2"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="TH1" pin="2"/>
+      <node ref="R37" pin="2"/>
+      <node ref="U6" pin="5"/>
+      <node ref="C28" pin="2"/>
       <node ref="U1" pin="8"/>
     </net>
-    <net code="9" name="Net-(U1-Pad9)">
-      <node ref="U1" pin="9"/>
+    <net code="2" name="+3.3VA">
+      <node ref="D1" pin="2"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="R12" pin="2"/>
+      <node ref="C10" pin="1"/>
+      <node ref="D2" pin="2"/>
     </net>
-    <net code="10" name="Net-(U1-Pad26)">
-      <node ref="U1" pin="26"/>
-    </net>
-    <net code="11" name="Net-(J1-Pad2)">
-      <node ref="J1" pin="2"/>
-    </net>
-    <net code="12" name="Net-(J1-Pad3)">
-      <node ref="J1" pin="3"/>
-    </net>
-    <net code="13" name="Net-(J1-Pad4)">
-      <node ref="J1" pin="4"/>
-    </net>
-    <net code="14" name="Net-(J1-Pad5)">
-      <node ref="J1" pin="5"/>
-    </net>
-    <net code="15" name="Net-(J1-Pad6)">
-      <node ref="J1" pin="6"/>
-    </net>
-    <net code="16" name="/MCLR">
-      <node ref="J1" pin="1"/>
-    </net>
-    <net code="17" name="Net-(U1-Pad18)">
-      <node ref="U1" pin="18"/>
-    </net>
-    <net code="18" name="Net-(U1-Pad10)">
-      <node ref="U1" pin="10"/>
-    </net>
-    <net code="19" name="Net-(U1-Pad11)">
-      <node ref="U1" pin="11"/>
-    </net>
-    <net code="20" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="21" name="Net-(U1-Pad13)">
+    <net code="3" name="+3V3">
+      <node ref="C1" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="C28" pin="1"/>
+      <node ref="R19" pin="2"/>
+      <node ref="R5" pin="1"/>
       <node ref="U1" pin="13"/>
+      <node ref="U7" pin="8"/>
+      <node ref="R20" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="R32" pin="2"/>
+      <node ref="R33" pin="2"/>
+      <node ref="C23" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U4" pin="3"/>
+      <node ref="U4" pin="11"/>
+      <node ref="U4" pin="7"/>
+      <node ref="L2" pin="1"/>
+      <node ref="R41" pin="2"/>
+      <node ref="R9" pin="1"/>
     </net>
-    <net code="22" name="Net-(U1-Pad14)">
-      <node ref="U1" pin="14"/>
+    <net code="4" name="Net-(D2-Pad3)">
+      <node ref="D2" pin="3"/>
+      <node ref="R8" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="R7" pin="1"/>
     </net>
-    <net code="23" name="Net-(U1-Pad15)">
+    <net code="5" name="Net-(R16-Pad2)">
+      <node ref="R16" pin="2"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="6" name="Net-(C8-Pad2)">
+      <node ref="C8" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="7" name="Net-(L1-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="R12" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="8" name="Net-(C11-Pad2)">
+      <node ref="L1" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="C11" pin="2"/>
+    </net>
+    <net code="9" name="/IC1">
+      <node ref="U1" pin="6"/>
+      <node ref="C11" pin="1"/>
+    </net>
+    <net code="10" name="+BATT">
+      <node ref="U6" pin="10"/>
+      <node ref="U6" pin="9"/>
+      <node ref="R34" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="F1" pin="1"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C26" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="R36" pin="1"/>
+      <node ref="Q4" pin="2"/>
+    </net>
+    <net code="11" name="/PSEN#">
       <node ref="U1" pin="15"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="R9" pin="2"/>
     </net>
-    <net code="24" name="Net-(U1-Pad16)">
-      <node ref="U1" pin="16"/>
+    <net code="12" name="Net-(C15-Pad1)">
+      <node ref="L2" pin="2"/>
+      <node ref="U1" pin="28"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C15" pin="1"/>
     </net>
-    <net code="25" name="Net-(U1-Pad17)">
-      <node ref="U1" pin="17"/>
+    <net code="13" name="Net-(R30-Pad1)">
+      <node ref="U6" pin="8"/>
+      <node ref="R30" pin="1"/>
     </net>
-    <net code="26" name="Net-(U1-Pad1)">
-      <node ref="U1" pin="1"/>
+    <net code="14" name="Net-(R29-Pad1)">
+      <node ref="R29" pin="1"/>
+      <node ref="TH1" pin="1"/>
+      <node ref="R30" pin="2"/>
     </net>
-    <net code="27" name="Net-(U1-Pad19)">
-      <node ref="U1" pin="19"/>
+    <net code="15" name="Net-(R37-Pad1)">
+      <node ref="R37" pin="1"/>
+      <node ref="U6" pin="6"/>
     </net>
-    <net code="28" name="Net-(U1-Pad2)">
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="29" name="Net-(U1-Pad20)">
-      <node ref="U1" pin="20"/>
-    </net>
-    <net code="30" name="Net-(U1-Pad21)">
-      <node ref="U1" pin="21"/>
-    </net>
-    <net code="31" name="Net-(U1-Pad22)">
-      <node ref="U1" pin="22"/>
-    </net>
-    <net code="32" name="Net-(U1-Pad23)">
-      <node ref="U1" pin="23"/>
-    </net>
-    <net code="33" name="Net-(U1-Pad24)">
+    <net code="16" name="/DN#">
+      <node ref="R22" pin="1"/>
+      <node ref="C20" pin="1"/>
       <node ref="U1" pin="24"/>
     </net>
-    <net code="34" name="Net-(U1-Pad25)">
+    <net code="17" name="/SDA1">
+      <node ref="U4" pin="2"/>
+      <node ref="U7" pin="11"/>
+      <node ref="U1" pin="18"/>
+      <node ref="R33" pin="1"/>
+    </net>
+    <net code="18" name="/SCL1">
+      <node ref="R32" pin="1"/>
+      <node ref="U1" pin="17"/>
+      <node ref="U7" pin="10"/>
+      <node ref="U4" pin="12"/>
+    </net>
+    <net code="19" name="/RST#">
+      <node ref="R44" pin="1"/>
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="20" name="/DEN#">
+      <node ref="U1" pin="21"/>
+      <node ref="R36" pin="2"/>
+      <node ref="Q4" pin="1"/>
+    </net>
+    <net code="21" name="/UP#">
+      <node ref="R23" pin="1"/>
+      <node ref="C21" pin="1"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="22" name="/OK#">
+      <node ref="U1" pin="23"/>
+      <node ref="R24" pin="1"/>
+      <node ref="C22" pin="1"/>
+    </net>
+    <net code="23" name="Net-(R31-Pad2)">
+      <node ref="R34" pin="2"/>
+      <node ref="R35" pin="1"/>
+      <node ref="R31" pin="2"/>
+    </net>
+    <net code="24" name="/AN1">
+      <node ref="C25" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="R31" pin="1"/>
+    </net>
+    <net code="25" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="26" name="/AN0">
+      <node ref="R15" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="27" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2"/>
+      <node ref="R43" pin="1"/>
+    </net>
+    <net code="28" name="Net-(R43-Pad2)">
+      <node ref="R43" pin="2"/>
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="29" name="/PG#">
+      <node ref="R45" pin="1"/>
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="30" name="Net-(J2-Pad1)">
+      <node ref="L3" pin="2"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="31" name="/CH_CPLT#">
+      <node ref="R41" pin="1"/>
       <node ref="U1" pin="25"/>
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="32" name="Net-(U1-Pad26)">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="33" name="/INT1">
+      <node ref="U1" pin="7"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="34" name="Net-(U4-Pad10)">
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="35" name="Net-(R25-Pad2)">
+      <node ref="U4" pin="5"/>
+      <node ref="R25" pin="2"/>
+    </net>
+    <net code="36" name="Net-(U4-Pad6)">
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="37" name="Net-(R15-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="38" name="Net-(U7-Pad6)">
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="41" name="Net-(F1-Pad2)">
+      <node ref="F1" pin="2"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="42" name="Net-(C8-Pad1)">
+      <node ref="R10" pin="2"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R11" pin="2"/>
+      <node ref="C8" pin="1"/>
+    </net>
+    <net code="43" name="Net-(Q2-Pad2)">
+      <node ref="R13" pin="1"/>
+      <node ref="Q2" pin="2"/>
+    </net>
+    <net code="44" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="45" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R45" pin="2"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="46" name="Net-(R26-Pad1)">
+      <node ref="U5" pin="1"/>
+      <node ref="R26" pin="1"/>
+    </net>
+    <net code="47" name="Net-(R44-Pad2)">
+      <node ref="U7" pin="9"/>
+      <node ref="R44" pin="2"/>
+    </net>
+    <net code="48" name="Net-(U5-Pad15)">
+      <node ref="U5" pin="15"/>
+    </net>
+    <net code="49" name="Net-(U5-Pad16)">
+      <node ref="U5" pin="16"/>
+    </net>
+    <net code="50" name="Net-(U5-Pad2)">
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="51" name="Net-(U5-Pad6)">
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="52" name="Net-(C5-Pad1)">
+      <node ref="U1" pin="10"/>
+      <node ref="C5" pin="1"/>
+      <node ref="Y1" pin="3"/>
+    </net>
+    <net code="53" name="Net-(C35-Pad1)">
+      <node ref="C35" pin="1"/>
+      <node ref="U7" pin="13"/>
+    </net>
+    <net code="54" name="Net-(C36-Pad1)">
+      <node ref="C36" pin="1"/>
+      <node ref="U7" pin="14"/>
+    </net>
+    <net code="55" name="Net-(C32-Pad1)">
+      <node ref="U7" pin="4"/>
+      <node ref="C32" pin="1"/>
+    </net>
+    <net code="56" name="/PC-RX">
+      <node ref="U5" pin="7"/>
+      <node ref="R28" pin="2"/>
+    </net>
+    <net code="57" name="/U1RX">
+      <node ref="U1" pin="12"/>
+      <node ref="R26" pin="2"/>
+    </net>
+    <net code="58" name="Net-(R27-Pad2)">
+      <node ref="R27" pin="2"/>
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="59" name="Net-(D4-Pad1)">
+      <node ref="R28" pin="1"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="60" name="Net-(R39-Pad2)">
+      <node ref="R39" pin="2"/>
+      <node ref="U5" pin="9"/>
+    </net>
+    <net code="61" name="Net-(R40-Pad2)">
+      <node ref="U5" pin="8"/>
+      <node ref="R40" pin="2"/>
+    </net>
+    <net code="62" name="/D-">
+      <node ref="J2" pin="2"/>
+      <node ref="C33" pin="1"/>
+      <node ref="R39" pin="1"/>
+    </net>
+    <net code="63" name="Net-(C3-Pad2)">
+      <node ref="C3" pin="2"/>
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="64" name="/U1TX">
+      <node ref="R27" pin="1"/>
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="65" name="/LIVE_LED">
+      <node ref="U1" pin="14"/>
+      <node ref="R6" pin="2"/>
+    </net>
+    <net code="66" name="/PGC">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="67" name="Net-(J1-Pad5)">
+      <node ref="R2" pin="2"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="68" name="/PGD">
+      <node ref="U1" pin="4"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="69" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="70" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="71" name="/MCLR#">
+      <node ref="U1" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="72" name="Net-(C4-Pad1)">
+      <node ref="Y1" pin="1"/>
+      <node ref="U1" pin="9"/>
+      <node ref="C4" pin="1"/>
+    </net>
+    <net code="73" name="/5V_USB">
+      <node ref="L3" pin="1"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U5" pin="12"/>
+      <node ref="U6" pin="2"/>
+      <node ref="C34" pin="1"/>
+    </net>
+    <net code="74" name="Net-(D5-Pad1)">
+      <node ref="R38" pin="1"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="75" name="/D+">
+      <node ref="J2" pin="3"/>
+      <node ref="R40" pin="1"/>
+      <node ref="C31" pin="1"/>
+    </net>
+    <net code="76" name="Net-(C18-Pad1)">
+      <node ref="R23" pin="2"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="77" name="Net-(R42-Pad1)">
+      <node ref="R42" pin="1"/>
+      <node ref="U7" pin="12"/>
+    </net>
+    <net code="78" name="Net-(D3-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="79" name="Net-(C17-Pad1)">
+      <node ref="R22" pin="2"/>
+      <node ref="SW1" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="C17" pin="1"/>
+    </net>
+    <net code="80" name="Net-(C19-Pad1)">
+      <node ref="R24" pin="2"/>
+      <node ref="C19" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="81" name="Net-(C30-Pad1)">
+      <node ref="U7" pin="1"/>
+      <node ref="C30" pin="1"/>
+    </net>
+    <net code="82" name="Net-(C30-Pad2)">
+      <node ref="U7" pin="2"/>
+      <node ref="C30" pin="2"/>
+    </net>
+    <net code="83" name="/PC-TX">
+      <node ref="U5" pin="14"/>
+      <node ref="R38" pin="2"/>
+    </net>
+    <net code="84" name="/+3V3_USB">
+      <node ref="U5" pin="10"/>
+      <node ref="C27" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="U5" pin="3"/>
+      <node ref="U5" pin="11"/>
+    </net>
+    <net code="85" name="Net-(C32-Pad2)">
+      <node ref="C32" pin="2"/>
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="86" name="Net-(C29-Pad1)">
+      <node ref="C29" pin="1"/>
+      <node ref="U7" pin="5"/>
+      <node ref="Q4" pin="3"/>
     </net>
   </nets>
 </export>
